@@ -448,14 +448,14 @@
   },
   "libraries": {
     "pinned_footprint_libs": [
-      "Alkatreszkonyvtar"
+      "SmartHomeFootprints"
     ],
     "pinned_symbol_libs": [
-      "Alkatreszkonyvtar"
+      "SmartHomeSymbols"
     ]
   },
   "meta": {
-    "filename": "Aramkortervezes_projekt.kicad_pro",
+    "filename": "WindowOpener.kicad_pro",
     "version": 3
   },
   "net_settings": {
@@ -691,7 +691,7 @@
     ],
     [
       "9855627f-fa2d-4bc2-9342-1b3aeb423b2c",
-      "Power+USB"
+      "Power"
     ]
   ],
   "text_variables": {}
