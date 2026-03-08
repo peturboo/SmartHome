@@ -1,0 +1,4 @@
+(fp_lib_table
+  (version 7)
+  (lib (name "Alkatreszkonyvtar")(type "KiCad")(uri "${KIPRJMOD}/Alkatreszkonyvtar.pretty")(options "")(descr ""))
+)
