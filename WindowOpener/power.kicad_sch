@@ -9,7 +9,7 @@
 		(date "2026-03-08")
 	)
 	(lib_symbols
-		(symbol "Connector_Generic:Conn_01x02"
+		(symbol "Conn_01x02_1"
 			(pin_names
 				(offset 1.016)
 				(hide yes)
@@ -17,23 +17,23 @@
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
-			(property "Reference" "J"
-				(at 0 2.54 0)
+			(property "Reference" "J4"
+				(at 7.874 -2.54 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
 				)
 			)
-			(property "Value" "Conn_01x02"
-				(at 0 -5.08 0)
+			(property "Value" "Batt_Conn1"
+				(at 7.874 0 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
 				)
 			)
-			(property "Footprint" ""
+			(property "Footprint" "Battery:BatteryHolder_Keystone_1042_1x18650"
 				(at 0 0 0)
 				(effects
 					(font
@@ -42,7 +42,7 @@
 					(hide yes)
 				)
 			)
-			(property "Datasheet" "~"
+			(property "Datasheet" "https://www.farnell.com/datasheets/2067690.pdf"
 				(at 0 0 0)
 				(effects
 					(font
@@ -52,6 +52,168 @@
 				)
 			)
 			(property "Description" "Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Store link" "https://hu.farnell.com/keystone/1042p/battery-holder-18650-smd/dp/2674338"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "connector"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "Connector*:*_1x??_*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "Conn_01x02_1_1_1"
+				(rectangle
+					(start -1.27 1.27)
+					(end 1.27 -3.81)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(rectangle
+					(start -1.27 0.127)
+					(end 0 -0.127)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(rectangle
+					(start -1.27 -2.413)
+					(end 0 -2.667)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(pin passive line
+					(at -5.08 0 0)
+					(length 3.81)
+					(name "Pin_1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(alternate "Positive" passive line)
+				)
+				(pin passive line
+					(at -5.08 -2.54 0)
+					(length 3.81)
+					(name "Pin_2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(alternate "Negative" passive line)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "Connector_Generic:Conn_01x02"
+			(pin_names
+				(offset 1.016)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "J3"
+				(at 7.874 -2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "Batt_Conn1"
+				(at 7.874 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" "Battery:BatteryHolder_Keystone_1042_1x18650"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "https://www.farnell.com/datasheets/2067690.pdf"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Store link" "https://hu.farnell.com/keystone/1042p/battery-holder-18650-smd/dp/2674338"
 				(at 0 0 0)
 				(effects
 					(font
@@ -129,6 +291,7 @@
 							)
 						)
 					)
+					(alternate "Positve" passive line)
 				)
 				(pin passive line
 					(at -5.08 -2.54 0)
@@ -147,6 +310,7 @@
 							)
 						)
 					)
+					(alternate "Negative" passive line)
 				)
 			)
 			(embedded_fonts no)
@@ -1066,6 +1230,28 @@
 			(embedded_fonts no)
 		)
 	)
+	(rectangle
+		(start 24.13 19.05)
+		(end 139.7 74.93)
+		(stroke
+			(width 0)
+			(type dash)
+		)
+		(fill
+			(type none)
+		)
+		(uuid e7914856-473a-4163-bd02-81957e929c8b)
+	)
+	(text "MC tápellátás"
+		(exclude_from_sim no)
+		(at 31.75 21.844 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "8aac9a24-0dc7-44d5-bf1f-8bf55da6aab5")
+	)
 	(junction
 		(at 58.42 36.83)
 		(diameter 0)
@@ -1512,7 +1698,7 @@
 				)
 			)
 		)
-		(property "Value" "Conn_01x02"
+		(property "Value" "Batt_Conn1"
 			(at 37.846 39.37 0)
 			(effects
 				(font
@@ -1558,9 +1744,11 @@
 		)
 		(pin "2"
 			(uuid "cf15898f-6a6d-4fd9-b8f5-1210bd0f8ca6")
+			(alternate "Negative")
 		)
 		(pin "1"
 			(uuid "b5865183-38bf-48d5-a42a-dd330e8aa0be")
+			(alternate "Positve")
 		)
 		(instances
 			(project ""
@@ -2157,6 +2345,7 @@
 		)
 	)
 	(symbol
+		(lib_name "Conn_01x02_1")
 		(lib_id "Connector_Generic:Conn_01x02")
 		(at 45.72 48.26 180)
 		(unit 1)
@@ -2173,7 +2362,7 @@
 				)
 			)
 		)
-		(property "Value" "Conn_01x02"
+		(property "Value" "Batt_Conn2"
 			(at 37.846 48.26 0)
 			(effects
 				(font
@@ -2219,9 +2408,11 @@
 		)
 		(pin "2"
 			(uuid "dcbee03f-5f3d-4dc9-87f7-6a5c0f61904d")
+			(alternate "Negative")
 		)
 		(pin "1"
 			(uuid "56541b0b-1631-42d7-bea1-4c06408bd299")
+			(alternate "Positive")
 		)
 		(instances
 			(project "WindowOpener"
