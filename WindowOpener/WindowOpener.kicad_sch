@@ -6216,7 +6216,7 @@
 			(uuid "a7568f82-c444-4f71-8cf8-d481e616e52b")
 		)
 		(instances
-			(project "Aramkortervezes_projekt"
+			(project "WindowOpener"
 				(path "/9cc66d3b-a4f0-4570-ad5d-091fde92d938"
 					(reference "Y1")
 					(unit 1)
@@ -6282,7 +6282,7 @@
 			(uuid "403651ef-43a3-4fdc-bcf1-99481f0ae686")
 		)
 		(instances
-			(project "Aramkortervezes_projekt"
+			(project "WindowOpener"
 				(path "/9cc66d3b-a4f0-4570-ad5d-091fde92d938"
 					(reference "#PWR014")
 					(unit 1)
@@ -6359,7 +6359,7 @@
 			(uuid "a840aa23-39fc-4e7d-a9ea-a4dcc66545ed")
 		)
 		(instances
-			(project "Aramkortervezes_projekt"
+			(project "WindowOpener"
 				(path "/9cc66d3b-a4f0-4570-ad5d-091fde92d938"
 					(reference "FB1")
 					(unit 1)
@@ -6435,7 +6435,7 @@
 			(uuid "6b88c0de-55da-4527-ac21-42e95289da31")
 		)
 		(instances
-			(project "Aramkortervezes_projekt"
+			(project "WindowOpener"
 				(path "/9cc66d3b-a4f0-4570-ad5d-091fde92d938"
 					(reference "R8")
 					(unit 1)
@@ -6511,7 +6511,7 @@
 			(uuid "5f6c43df-29b3-49be-80d2-8ed40cf35bd1")
 		)
 		(instances
-			(project "Aramkortervezes_projekt"
+			(project "WindowOpener"
 				(path "/9cc66d3b-a4f0-4570-ad5d-091fde92d938"
 					(reference "R21")
 					(unit 1)
@@ -6587,7 +6587,7 @@
 			(uuid "197d558d-3339-4ea4-a0db-deea3a5c4943")
 		)
 		(instances
-			(project "Aramkortervezes_projekt"
+			(project "WindowOpener"
 				(path "/9cc66d3b-a4f0-4570-ad5d-091fde92d938"
 					(reference "R2")
 					(unit 1)
@@ -6653,7 +6653,7 @@
 			(uuid "31c9a700-9652-4f8b-98b6-05a09ee2bdd9")
 		)
 		(instances
-			(project "Aramkortervezes_projekt"
+			(project "WindowOpener"
 				(path "/9cc66d3b-a4f0-4570-ad5d-091fde92d938"
 					(reference "#PWR01")
 					(unit 1)
@@ -6732,7 +6732,7 @@
 			(uuid "966c979e-3ea3-46aa-adff-2ef2c6b95b81")
 		)
 		(instances
-			(project "Aramkortervezes_projekt"
+			(project "WindowOpener"
 				(path "/9cc66d3b-a4f0-4570-ad5d-091fde92d938"
 					(reference "C10")
 					(unit 1)
@@ -6808,7 +6808,7 @@
 			(uuid "080c7e03-9d53-4970-81f5-280a08f53795")
 		)
 		(instances
-			(project "Aramkortervezes_projekt"
+			(project "WindowOpener"
 				(path "/9cc66d3b-a4f0-4570-ad5d-091fde92d938"
 					(reference "R1")
 					(unit 1)
@@ -6893,7 +6893,7 @@
 			(uuid "3d2d8105-a261-4fbf-bb9f-00b546e0c4f1")
 		)
 		(instances
-			(project ""
+			(project "WindowOpener"
 				(path "/9cc66d3b-a4f0-4570-ad5d-091fde92d938"
 					(reference "U2")
 					(unit 1)
@@ -7178,7 +7178,7 @@
 			(alternate "TIM2_CH1")
 		)
 		(instances
-			(project "Aramkortervezes_projekt"
+			(project "WindowOpener"
 				(path "/9cc66d3b-a4f0-4570-ad5d-091fde92d938"
 					(reference "U1")
 					(unit 1)
@@ -7256,7 +7256,7 @@
 			(uuid "ec45b807-338f-4dbc-8594-27ced8e50d55")
 		)
 		(instances
-			(project "Aramkortervezes_projekt"
+			(project "WindowOpener"
 				(path "/9cc66d3b-a4f0-4570-ad5d-091fde92d938"
 					(reference "C6")
 					(unit 1)
@@ -7332,7 +7332,7 @@
 			(uuid "3a5d7f74-d9fc-4a33-a73a-27452279c58a")
 		)
 		(instances
-			(project "Aramkortervezes_projekt"
+			(project "WindowOpener"
 				(path "/9cc66d3b-a4f0-4570-ad5d-091fde92d938"
 					(reference "R3")
 					(unit 1)
@@ -7411,7 +7411,7 @@
 			(uuid "bfea266b-dc9d-404b-9980-f96bb5de7889")
 		)
 		(instances
-			(project "Aramkortervezes_projekt"
+			(project "WindowOpener"
 				(path "/9cc66d3b-a4f0-4570-ad5d-091fde92d938"
 					(reference "C5")
 					(unit 1)
@@ -7477,7 +7477,7 @@
 			(uuid "caa7786a-596a-4209-b889-baab56d53571")
 		)
 		(instances
-			(project "Aramkortervezes_projekt"
+			(project "WindowOpener"
 				(path "/9cc66d3b-a4f0-4570-ad5d-091fde92d938"
 					(reference "#PWR04")
 					(unit 1)
@@ -7544,7 +7544,7 @@
 			(uuid "aff8c7f1-36de-4d77-9f22-f3cdf7775351")
 		)
 		(instances
-			(project "Aramkortervezes_projekt"
+			(project "WindowOpener"
 				(path "/9cc66d3b-a4f0-4570-ad5d-091fde92d938"
 					(reference "#PWR08")
 					(unit 1)
@@ -7620,7 +7620,7 @@
 			(uuid "ee28e46d-e66c-49a7-b33a-bb87e9214d86")
 		)
 		(instances
-			(project "Aramkortervezes_projekt"
+			(project "WindowOpener"
 				(path "/9cc66d3b-a4f0-4570-ad5d-091fde92d938"
 					(reference "R5")
 					(unit 1)
@@ -7686,7 +7686,7 @@
 			(uuid "b7ee25ab-1b5a-4a85-8a6c-68369d8fb580")
 		)
 		(instances
-			(project "Aramkortervezes_projekt"
+			(project "WindowOpener"
 				(path "/9cc66d3b-a4f0-4570-ad5d-091fde92d938"
 					(reference "#PWR012")
 					(unit 1)
@@ -7753,7 +7753,7 @@
 			(uuid "629b0268-b4cf-4499-a54b-0c17626967ef")
 		)
 		(instances
-			(project "Aramkortervezes_projekt"
+			(project "WindowOpener"
 				(path "/9cc66d3b-a4f0-4570-ad5d-091fde92d938"
 					(reference "#FLG03")
 					(unit 1)
@@ -7819,7 +7819,7 @@
 			(uuid "aae2b810-052f-44c1-bfb4-0a9d41a565bd")
 		)
 		(instances
-			(project "Aramkortervezes_projekt"
+			(project "WindowOpener"
 				(path "/9cc66d3b-a4f0-4570-ad5d-091fde92d938"
 					(reference "#PWR06")
 					(unit 1)
@@ -7885,7 +7885,7 @@
 			(uuid "f6023306-d3f2-4dcc-8700-bd6cfe5f47d0")
 		)
 		(instances
-			(project "Aramkortervezes_projekt"
+			(project "WindowOpener"
 				(path "/9cc66d3b-a4f0-4570-ad5d-091fde92d938"
 					(reference "#PWR02")
 					(unit 1)
@@ -7951,7 +7951,7 @@
 			(uuid "53a2d5d1-3cef-4824-afe8-634a8323a6a1")
 		)
 		(instances
-			(project "Aramkortervezes_projekt"
+			(project "WindowOpener"
 				(path "/9cc66d3b-a4f0-4570-ad5d-091fde92d938"
 					(reference "#PWR020")
 					(unit 1)
@@ -8054,7 +8054,7 @@
 			(uuid "03c2fef6-d17c-4f21-bc44-55102cc7d132")
 		)
 		(instances
-			(project ""
+			(project "WindowOpener"
 				(path "/9cc66d3b-a4f0-4570-ad5d-091fde92d938"
 					(reference "J2")
 					(unit 1)
@@ -8133,7 +8133,7 @@
 			(uuid "d1a321ba-7905-478e-9e15-e9e38097a6d0")
 		)
 		(instances
-			(project "Aramkortervezes_projekt"
+			(project "WindowOpener"
 				(path "/9cc66d3b-a4f0-4570-ad5d-091fde92d938"
 					(reference "C12")
 					(unit 1)
@@ -8199,7 +8199,7 @@
 			(uuid "287c79d1-0485-4c35-9912-fb3959da8b5f")
 		)
 		(instances
-			(project "Aramkortervezes_projekt"
+			(project "WindowOpener"
 				(path "/9cc66d3b-a4f0-4570-ad5d-091fde92d938"
 					(reference "#PWR021")
 					(unit 1)
@@ -8279,7 +8279,7 @@
 			(uuid "22129510-4220-4a18-b886-9cd5a914f92a")
 		)
 		(instances
-			(project ""
+			(project "WindowOpener"
 				(path "/9cc66d3b-a4f0-4570-ad5d-091fde92d938"
 					(reference "SW2")
 					(unit 1)
@@ -8355,7 +8355,7 @@
 			(uuid "45948154-6be3-453b-9172-2a14d43ce2c4")
 		)
 		(instances
-			(project "Aramkortervezes_projekt"
+			(project "WindowOpener"
 				(path "/9cc66d3b-a4f0-4570-ad5d-091fde92d938"
 					(reference "R7")
 					(unit 1)
@@ -8421,7 +8421,7 @@
 			(uuid "07fd41cc-4415-4f78-9eb5-44f89b40e947")
 		)
 		(instances
-			(project "Aramkortervezes_projekt"
+			(project "WindowOpener"
 				(path "/9cc66d3b-a4f0-4570-ad5d-091fde92d938"
 					(reference "#PWR03")
 					(unit 1)
@@ -8499,7 +8499,7 @@
 			(uuid "7217dd60-ad55-4431-8839-6613e20e2d83")
 		)
 		(instances
-			(project ""
+			(project "WindowOpener"
 				(path "/9cc66d3b-a4f0-4570-ad5d-091fde92d938"
 					(reference "SW1")
 					(unit 1)
@@ -8578,7 +8578,7 @@
 			(uuid "b8591d52-4ee7-4d49-abcf-dcd80760633d")
 		)
 		(instances
-			(project "Aramkortervezes_projekt"
+			(project "WindowOpener"
 				(path "/9cc66d3b-a4f0-4570-ad5d-091fde92d938"
 					(reference "C1")
 					(unit 1)
@@ -8657,7 +8657,7 @@
 			(uuid "c4387328-fe6f-444d-8eae-cc29d6321f7b")
 		)
 		(instances
-			(project "Aramkortervezes_projekt"
+			(project "WindowOpener"
 				(path "/9cc66d3b-a4f0-4570-ad5d-091fde92d938"
 					(reference "C4")
 					(unit 1)
@@ -8736,7 +8736,7 @@
 			(uuid "195263e0-2b0b-4f0c-b691-5276bb92ff00")
 		)
 		(instances
-			(project "Aramkortervezes_projekt"
+			(project "WindowOpener"
 				(path "/9cc66d3b-a4f0-4570-ad5d-091fde92d938"
 					(reference "C3")
 					(unit 1)
@@ -8815,7 +8815,7 @@
 			(uuid "a633c923-7a63-45f6-a087-1d8cc6acd747")
 		)
 		(instances
-			(project "Aramkortervezes_projekt"
+			(project "WindowOpener"
 				(path "/9cc66d3b-a4f0-4570-ad5d-091fde92d938"
 					(reference "C9")
 					(unit 1)
@@ -8881,7 +8881,7 @@
 			(uuid "cb78cc62-0ac3-4839-9567-0bf3c1e13c73")
 		)
 		(instances
-			(project "Aramkortervezes_projekt"
+			(project "WindowOpener"
 				(path "/9cc66d3b-a4f0-4570-ad5d-091fde92d938"
 					(reference "#PWR011")
 					(unit 1)
@@ -8947,7 +8947,7 @@
 			(uuid "469e9f6f-2b37-4b3b-9fa7-f6eb16e77390")
 		)
 		(instances
-			(project "Aramkortervezes_projekt"
+			(project "WindowOpener"
 				(path "/9cc66d3b-a4f0-4570-ad5d-091fde92d938"
 					(reference "#PWR015")
 					(unit 1)
@@ -9012,7 +9012,7 @@
 			(uuid "bcb0afdd-f652-4c70-8855-6f9e4ab0f5b0")
 		)
 		(instances
-			(project "Aramkortervezes_projekt"
+			(project "WindowOpener"
 				(path "/9cc66d3b-a4f0-4570-ad5d-091fde92d938"
 					(reference "#PWR013")
 					(unit 1)
@@ -9088,7 +9088,7 @@
 			(uuid "367aaee0-d23a-4be8-91b2-9214ac593351")
 		)
 		(instances
-			(project "Aramkortervezes_projekt"
+			(project "WindowOpener"
 				(path "/9cc66d3b-a4f0-4570-ad5d-091fde92d938"
 					(reference "R22")
 					(unit 1)
@@ -9164,7 +9164,7 @@
 			(uuid "31c8022c-feab-4342-b93b-e3ab266e64c1")
 		)
 		(instances
-			(project "Aramkortervezes_projekt"
+			(project "WindowOpener"
 				(path "/9cc66d3b-a4f0-4570-ad5d-091fde92d938"
 					(reference "R6")
 					(unit 1)
@@ -9243,7 +9243,7 @@
 			(uuid "915c8095-6f7a-4020-8fbd-57fba4288c75")
 		)
 		(instances
-			(project "Aramkortervezes_projekt"
+			(project "WindowOpener"
 				(path "/9cc66d3b-a4f0-4570-ad5d-091fde92d938"
 					(reference "C2")
 					(unit 1)
@@ -9309,7 +9309,7 @@
 			(uuid "eb9c60d9-abb9-427f-b469-72093daf50f1")
 		)
 		(instances
-			(project "Aramkortervezes_projekt"
+			(project "WindowOpener"
 				(path "/9cc66d3b-a4f0-4570-ad5d-091fde92d938"
 					(reference "#PWR07")
 					(unit 1)
@@ -9385,7 +9385,7 @@
 			(uuid "4bf61249-1847-4e06-bf1a-675d580ad0a0")
 		)
 		(instances
-			(project "Aramkortervezes_projekt"
+			(project "WindowOpener"
 				(path "/9cc66d3b-a4f0-4570-ad5d-091fde92d938"
 					(reference "R4")
 					(unit 1)
@@ -9464,7 +9464,7 @@
 			(uuid "833834b3-296e-4567-9dc7-5315675f32b8")
 		)
 		(instances
-			(project "Aramkortervezes_projekt"
+			(project "WindowOpener"
 				(path "/9cc66d3b-a4f0-4570-ad5d-091fde92d938"
 					(reference "C7")
 					(unit 1)
@@ -9529,7 +9529,7 @@
 			(uuid "47c36bab-7f4f-404d-8271-6516da4464d4")
 		)
 		(instances
-			(project "Aramkortervezes_projekt"
+			(project "WindowOpener"
 				(path "/9cc66d3b-a4f0-4570-ad5d-091fde92d938"
 					(reference "#PWR010")
 					(unit 1)
@@ -9596,7 +9596,7 @@
 			(uuid "e49f8348-8356-436a-a613-62cac9bac4b1")
 		)
 		(instances
-			(project "Aramkortervezes_projekt"
+			(project "WindowOpener"
 				(path "/9cc66d3b-a4f0-4570-ad5d-091fde92d938"
 					(reference "#PWR05")
 					(unit 1)
@@ -9711,7 +9711,7 @@
 			(uuid "70334f30-a740-4b47-95f1-ce76db55e082")
 		)
 		(instances
-			(project "Aramkortervezes_projekt"
+			(project "WindowOpener"
 				(path "/9cc66d3b-a4f0-4570-ad5d-091fde92d938"
 					(reference "J1")
 					(unit 1)
@@ -9788,7 +9788,7 @@
 			(uuid "50b3f4c7-833f-4489-a768-1533208d9416")
 		)
 		(instances
-			(project "Aramkortervezes_projekt"
+			(project "WindowOpener"
 				(path "/9cc66d3b-a4f0-4570-ad5d-091fde92d938"
 					(reference "C8")
 					(unit 1)
@@ -9864,7 +9864,7 @@
 			(uuid "f2cc0d97-9827-427c-9136-e7b52705bb87")
 		)
 		(instances
-			(project "Aramkortervezes_projekt"
+			(project "WindowOpener"
 				(path "/9cc66d3b-a4f0-4570-ad5d-091fde92d938"
 					(reference "R9")
 					(unit 1)
@@ -9930,7 +9930,7 @@
 			(uuid "7d81a3ca-9e7a-45ee-bea4-10ecb8d0f51f")
 		)
 		(instances
-			(project "Aramkortervezes_projekt"
+			(project "WindowOpener"
 				(path "/9cc66d3b-a4f0-4570-ad5d-091fde92d938"
 					(reference "#PWR09")
 					(unit 1)
@@ -9997,7 +9997,7 @@
 			(uuid "ee4eb053-3c8a-415f-b6a3-da4306addcf4")
 		)
 		(instances
-			(project "Aramkortervezes_projekt"
+			(project "WindowOpener"
 				(path "/9cc66d3b-a4f0-4570-ad5d-091fde92d938"
 					(reference "#FLG02")
 					(unit 1)
@@ -10074,7 +10074,7 @@
 			(uuid "cfebcc22-d1e9-4064-a51e-364b7062403e")
 		)
 		(instances
-			(project "Aramkortervezes_projekt"
+			(project "WindowOpener"
 				(path "/9cc66d3b-a4f0-4570-ad5d-091fde92d938"
 					(reference "Y2")
 					(unit 1)
@@ -10152,7 +10152,7 @@
 			(uuid "89afb698-6b04-4d7d-836f-b68baeea1c6b")
 		)
 		(instances
-			(project "Aramkortervezes_projekt"
+			(project "WindowOpener"
 				(path "/9cc66d3b-a4f0-4570-ad5d-091fde92d938"
 					(reference "C11")
 					(unit 1)
@@ -10176,7 +10176,7 @@
 			(color 0 0 0 0.0000)
 		)
 		(uuid "9855627f-fa2d-4bc2-9342-1b3aeb423b2c")
-		(property "Sheetname" "Power"
+		(property "Sheetname" "MCU+Motors Power"
 			(at 148.59 137.7184 0)
 			(effects
 				(font
