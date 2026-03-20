@@ -1232,7 +1232,7 @@
 	)
 	(rectangle
 		(start 24.13 19.05)
-		(end 161.29 74.93)
+		(end 161.29 72.39)
 		(stroke
 			(width 0)
 			(type dash)
@@ -1242,9 +1242,9 @@
 		)
 		(uuid e7914856-473a-4163-bd02-81957e929c8b)
 	)
-	(text "MCU tápellátás"
+	(text "MCU tápellátás (Batt measure missing)"
 		(exclude_from_sim no)
-		(at 31.75 21.844 0)
+		(at 44.196 21.336 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1259,6 +1259,18 @@
 		(uuid "427a1407-56e2-4348-b2ad-0b3da483c2c1")
 	)
 	(junction
+		(at 74.93 97.79)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "77fec486-68e9-4122-9a3a-c8c6a772c4c2")
+	)
+	(junction
+		(at 198.12 81.28)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "7ab2cb75-fca5-4847-bde8-b3022a64559b")
+	)
+	(junction
 		(at 99.06 55.88)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -1269,6 +1281,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "b897c36b-cec4-4b75-b765-6ce2436a00b0")
+	)
+	(junction
+		(at 198.12 97.79)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "c16c4d68-5436-457c-8970-11babe7a7242")
 	)
 	(junction
 		(at 71.12 36.83)
@@ -1289,6 +1307,12 @@
 		(uuid "d4f448bc-a826-4867-bb92-7e521816f183")
 	)
 	(junction
+		(at 74.93 81.28)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "d51d5942-5f41-4508-9735-0edce74d2699")
+	)
+	(junction
 		(at 116.84 36.83)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -1303,6 +1327,16 @@
 			(type default)
 		)
 		(uuid "0346ea8e-0334-4c32-b056-8a37da606639")
+	)
+	(wire
+		(pts
+			(xy 218.44 88.9) (xy 218.44 97.79)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0e8ef145-c556-44ee-b30c-adbe6ece7354")
 	)
 	(wire
 		(pts
@@ -1336,6 +1370,16 @@
 	)
 	(wire
 		(pts
+			(xy 74.93 81.28) (xy 95.25 81.28)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2ea60954-7b69-4032-9763-953a3d3c9b1c")
+	)
+	(wire
+		(pts
 			(xy 48.26 50.8) (xy 48.26 54.61)
 		)
 		(stroke
@@ -1343,6 +1387,16 @@
 			(type default)
 		)
 		(uuid "2eddbb87-ccf0-4dbc-a0b4-c5a704ea489e")
+	)
+	(wire
+		(pts
+			(xy 177.8 81.28) (xy 198.12 81.28)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "32ea2426-1535-44d2-bb67-4b44f395d797")
 	)
 	(wire
 		(pts
@@ -1356,6 +1410,16 @@
 	)
 	(wire
 		(pts
+			(xy 74.93 88.9) (xy 74.93 97.79)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "362656bd-ef63-44af-beec-74f359b7686c")
+	)
+	(wire
+		(pts
 			(xy 116.84 29.21) (xy 116.84 36.83)
 		)
 		(stroke
@@ -1363,6 +1427,16 @@
 			(type default)
 		)
 		(uuid "36b07448-dc48-4362-afe2-36b060c4070a")
+	)
+	(wire
+		(pts
+			(xy 54.61 97.79) (xy 74.93 97.79)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3df16770-86e5-4b39-97eb-40a012e11bdb")
 	)
 	(wire
 		(pts
@@ -1406,6 +1480,26 @@
 	)
 	(wire
 		(pts
+			(xy 54.61 86.36) (xy 54.61 81.28)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4d210cf3-009d-45db-8326-f4b831d86a29")
+	)
+	(wire
+		(pts
+			(xy 177.8 88.9) (xy 177.8 97.79)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4d986fe5-ca0b-4d62-9c65-9b8d0659c700")
+	)
+	(wire
+		(pts
 			(xy 45.72 36.83) (xy 71.12 36.83)
 		)
 		(stroke
@@ -1423,6 +1517,16 @@
 			(type default)
 		)
 		(uuid "50583c55-4082-4844-a70a-3017bf0391ec")
+	)
+	(wire
+		(pts
+			(xy 177.8 97.79) (xy 198.12 97.79)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5171e4c8-ed6c-41fe-b4c9-e3b580dd8ec8")
 	)
 	(wire
 		(pts
@@ -1466,6 +1570,36 @@
 	)
 	(wire
 		(pts
+			(xy 177.8 86.36) (xy 177.8 81.28)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "70dda669-08a4-4e50-8922-bfe98b5fb7ee")
+	)
+	(wire
+		(pts
+			(xy 95.25 81.28) (xy 95.25 86.36)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "72a3883f-5b8f-4d6b-a9a4-cffe9077437f")
+	)
+	(wire
+		(pts
+			(xy 198.12 81.28) (xy 198.12 86.36)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "783a8627-9ac8-47b6-8f03-cc284c8f757c")
+	)
+	(wire
+		(pts
 			(xy 77.47 34.29) (xy 77.47 36.83)
 		)
 		(stroke
@@ -1473,6 +1607,16 @@
 			(type default)
 		)
 		(uuid "7959e481-fe25-404d-8b0b-0cbdab36963a")
+	)
+	(wire
+		(pts
+			(xy 198.12 81.28) (xy 218.44 81.28)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7b05cd2a-421d-4362-a29c-5e919d9ad998")
 	)
 	(wire
 		(pts
@@ -1506,6 +1650,16 @@
 	)
 	(wire
 		(pts
+			(xy 95.25 88.9) (xy 95.25 97.79)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8e4b5330-cfd3-48c4-9a95-16e6752748bc")
+	)
+	(wire
+		(pts
 			(xy 71.12 41.91) (xy 71.12 48.26)
 		)
 		(stroke
@@ -1513,6 +1667,36 @@
 			(type default)
 		)
 		(uuid "9973e0cd-eecf-41d2-b1ab-a473b49f9c29")
+	)
+	(wire
+		(pts
+			(xy 74.93 81.28) (xy 74.93 86.36)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9e0a641a-c337-4437-bbb4-8c1bc16a9fd6")
+	)
+	(wire
+		(pts
+			(xy 218.44 81.28) (xy 218.44 86.36)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9ec6af34-f47b-4bcb-9294-9559290b8528")
+	)
+	(wire
+		(pts
+			(xy 198.12 97.79) (xy 218.44 97.79)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a6c166fc-3752-467b-98bb-1a0102b2b61f")
 	)
 	(wire
 		(pts
@@ -1526,6 +1710,16 @@
 	)
 	(wire
 		(pts
+			(xy 54.61 81.28) (xy 74.93 81.28)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b07a1c2b-b60e-4116-8df4-825b8e75cdb4")
+	)
+	(wire
+		(pts
 			(xy 87.63 36.83) (xy 91.44 36.83)
 		)
 		(stroke
@@ -1533,6 +1727,26 @@
 			(type default)
 		)
 		(uuid "b1be731a-bebe-454d-af1b-d12e0917dac7")
+	)
+	(wire
+		(pts
+			(xy 198.12 88.9) (xy 198.12 97.79)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c51d9ac8-46bd-46c2-9b70-bae7c0eeaa3a")
+	)
+	(wire
+		(pts
+			(xy 74.93 97.79) (xy 95.25 97.79)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c6ed45f3-0125-494d-b1ed-d90fbb8fe4fa")
 	)
 	(wire
 		(pts
@@ -1576,6 +1790,16 @@
 	)
 	(wire
 		(pts
+			(xy 54.61 88.9) (xy 54.61 97.79)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ed7fe2a8-f7b2-4fe1-af0c-e5d8f359da8d")
+	)
+	(wire
+		(pts
 			(xy 71.12 50.8) (xy 73.66 50.8)
 		)
 		(stroke
@@ -1613,6 +1837,72 @@
 			(type default)
 		)
 		(uuid "fb7ffc98-7732-4115-9bd2-b696f84686d2")
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 74.93 97.79 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "1a99c201-bdc7-46f7-ab2b-95571de19bdb")
+		(property "Reference" "#PWR023"
+			(at 74.93 104.14 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 74.93 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 74.93 97.79 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 74.93 97.79 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 74.93 97.79 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "a6f47929-dff5-48e1-9ac2-f41eb7f77988")
+		)
+		(instances
+			(project "WindowOpener"
+				(path "/9cc66d3b-a4f0-4570-ad5d-091fde92d938/9855627f-fa2d-4bc2-9342-1b3aeb423b2c"
+					(reference "#PWR023")
+					(unit 1)
+				)
+			)
+		)
 	)
 	(symbol
 		(lib_id "power:VDD")
@@ -1675,6 +1965,85 @@
 			(project "WindowOpener"
 				(path "/9cc66d3b-a4f0-4570-ad5d-091fde92d938/9855627f-fa2d-4bc2-9342-1b3aeb423b2c"
 					(reference "#PWR019")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_name "Conn_01x02_1")
+		(lib_id "Connector_Generic:Conn_01x02")
+		(at 69.85 88.9 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "3f205d88-fcbe-4bf0-b5c0-c0732bf55ecd")
+		(property "Reference" "J8"
+			(at 61.976 86.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "Batt_Conn2"
+			(at 61.976 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Battery:BatteryHolder_Keystone_1042_1x18650"
+			(at 69.85 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.farnell.com/datasheets/2067690.pdf"
+			(at 69.85 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 69.85 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Store link" "https://hu.farnell.com/keystone/1042p/battery-holder-18650-smd/dp/2674338"
+			(at 69.85 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "ca91fc2e-450c-4a32-a03f-64b14f2aeb45")
+			(alternate "Negative")
+		)
+		(pin "1"
+			(uuid "643616e1-e04f-4271-a3c9-4c305f914638")
+			(alternate "Positive")
+		)
+		(instances
+			(project "WindowOpener"
+				(path "/9cc66d3b-a4f0-4570-ad5d-091fde92d938/9855627f-fa2d-4bc2-9342-1b3aeb423b2c"
+					(reference "J8")
 					(unit 1)
 				)
 			)
@@ -1752,6 +2121,242 @@
 			(project "WindowOpener"
 				(path "/9cc66d3b-a4f0-4570-ad5d-091fde92d938/9855627f-fa2d-4bc2-9342-1b3aeb423b2c"
 					(reference "R11")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_name "Conn_01x02_1")
+		(lib_id "Connector_Generic:Conn_01x02")
+		(at 193.04 88.9 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "44f23939-3af5-488e-8dc2-9d2b96bad1ed")
+		(property "Reference" "J11"
+			(at 185.166 86.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "Batt_Conn2"
+			(at 185.166 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Battery:BatteryHolder_Keystone_1042_1x18650"
+			(at 193.04 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.farnell.com/datasheets/2067690.pdf"
+			(at 193.04 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 193.04 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Store link" "https://hu.farnell.com/keystone/1042p/battery-holder-18650-smd/dp/2674338"
+			(at 193.04 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "5e70a806-59c3-49c3-ac09-8dd7ef6cd70f")
+			(alternate "Negative")
+		)
+		(pin "1"
+			(uuid "0c9996c7-a16c-4444-bbd7-44d361256fb4")
+			(alternate "Positive")
+		)
+		(instances
+			(project "WindowOpener"
+				(path "/9cc66d3b-a4f0-4570-ad5d-091fde92d938/9855627f-fa2d-4bc2-9342-1b3aeb423b2c"
+					(reference "J11")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_name "Conn_01x02_1")
+		(lib_id "Connector_Generic:Conn_01x02")
+		(at 213.36 88.9 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "4c884a41-1c77-49fc-907d-d7b62609fd8c")
+		(property "Reference" "J12"
+			(at 205.486 86.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "Batt_Conn2"
+			(at 205.486 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Battery:BatteryHolder_Keystone_1042_1x18650"
+			(at 213.36 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.farnell.com/datasheets/2067690.pdf"
+			(at 213.36 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 213.36 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Store link" "https://hu.farnell.com/keystone/1042p/battery-holder-18650-smd/dp/2674338"
+			(at 213.36 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "1cb0beee-4d6e-4ede-9364-81b8bb8010a9")
+			(alternate "Negative")
+		)
+		(pin "1"
+			(uuid "e8327193-9e9d-442d-9449-771f595236ca")
+			(alternate "Positive")
+		)
+		(instances
+			(project "WindowOpener"
+				(path "/9cc66d3b-a4f0-4570-ad5d-091fde92d938/9855627f-fa2d-4bc2-9342-1b3aeb423b2c"
+					(reference "J12")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector_Generic:Conn_01x02")
+		(at 49.53 88.9 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "5708ae23-77a4-4cac-9501-ebdaf3bef809")
+		(property "Reference" "J7"
+			(at 41.656 86.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "Batt_Conn1"
+			(at 41.656 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Battery:BatteryHolder_Keystone_1042_1x18650"
+			(at 49.53 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.farnell.com/datasheets/2067690.pdf"
+			(at 49.53 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 49.53 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Store link" "https://hu.farnell.com/keystone/1042p/battery-holder-18650-smd/dp/2674338"
+			(at 49.53 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "5f9f9e15-01d0-4683-a1df-127394cb9fe6")
+			(alternate "Negative")
+		)
+		(pin "1"
+			(uuid "c42c251b-11c3-4c02-a375-413369fe3762")
+			(alternate "Positve")
+		)
+		(instances
+			(project "WindowOpener"
+				(path "/9cc66d3b-a4f0-4570-ad5d-091fde92d938/9855627f-fa2d-4bc2-9342-1b3aeb423b2c"
+					(reference "J7")
 					(unit 1)
 				)
 			)
@@ -2203,6 +2808,150 @@
 		)
 	)
 	(symbol
+		(lib_id "Connector_Generic:Conn_01x02")
+		(at 172.72 88.9 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "8b0c2ab7-4a04-4621-8211-0ff437e68296")
+		(property "Reference" "J10"
+			(at 164.846 86.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "Batt_Conn1"
+			(at 164.846 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Battery:BatteryHolder_Keystone_1042_1x18650"
+			(at 172.72 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.farnell.com/datasheets/2067690.pdf"
+			(at 172.72 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 172.72 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Store link" "https://hu.farnell.com/keystone/1042p/battery-holder-18650-smd/dp/2674338"
+			(at 172.72 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "0938f0fd-7451-4750-b7dc-f0663309502e")
+			(alternate "Negative")
+		)
+		(pin "1"
+			(uuid "fea65c5e-54e8-4d39-8347-1ead4dac91a2")
+			(alternate "Positve")
+		)
+		(instances
+			(project "WindowOpener"
+				(path "/9cc66d3b-a4f0-4570-ad5d-091fde92d938/9855627f-fa2d-4bc2-9342-1b3aeb423b2c"
+					(reference "J10")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 198.12 97.79 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "93b45d51-495c-4cda-9698-38a59bd954b6")
+		(property "Reference" "#PWR024"
+			(at 198.12 104.14 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 198.12 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 198.12 97.79 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 198.12 97.79 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 198.12 97.79 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "20889f73-d0ce-43e3-95b0-66fa3af60ecd")
+		)
+		(instances
+			(project "WindowOpener"
+				(path "/9cc66d3b-a4f0-4570-ad5d-091fde92d938/9855627f-fa2d-4bc2-9342-1b3aeb423b2c"
+					(reference "#PWR024")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
 		(at 151.13 52.07 0)
 		(unit 1)
@@ -2561,6 +3310,85 @@
 			(project "WindowOpener"
 				(path "/9cc66d3b-a4f0-4570-ad5d-091fde92d938/9855627f-fa2d-4bc2-9342-1b3aeb423b2c"
 					(reference "J5")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_name "Conn_01x02_1")
+		(lib_id "Connector_Generic:Conn_01x02")
+		(at 90.17 88.9 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "d52c9ef7-6dbc-4ca4-86c0-284809c2805a")
+		(property "Reference" "J9"
+			(at 82.296 86.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "Batt_Conn2"
+			(at 82.296 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Battery:BatteryHolder_Keystone_1042_1x18650"
+			(at 90.17 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.farnell.com/datasheets/2067690.pdf"
+			(at 90.17 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 90.17 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Store link" "https://hu.farnell.com/keystone/1042p/battery-holder-18650-smd/dp/2674338"
+			(at 90.17 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "5f19e6fb-331c-436b-a60e-77767edc5dd6")
+			(alternate "Negative")
+		)
+		(pin "1"
+			(uuid "c1b10fc7-dda9-4444-92da-d0bf0f916c13")
+			(alternate "Positive")
+		)
+		(instances
+			(project "WindowOpener"
+				(path "/9cc66d3b-a4f0-4570-ad5d-091fde92d938/9855627f-fa2d-4bc2-9342-1b3aeb423b2c"
+					(reference "J9")
 					(unit 1)
 				)
 			)
