@@ -691,7 +691,15 @@
     ],
     [
       "9855627f-fa2d-4bc2-9342-1b3aeb423b2c",
-      "MCU+Motors Power"
+      "MCU+Motors power"
+    ],
+    [
+      "be610696-c881-47e9-9995-7dcc8a9a0126",
+      "Sensors"
+    ],
+    [
+      "941e0566-51db-4c6f-ab19-e6a8bc9abf80",
+      "LEDs"
     ]
   ],
   "text_variables": {}
