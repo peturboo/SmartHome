@@ -4,6 +4,10 @@
 	(generator_version "9.0")
 	(uuid "9cc66d3b-a4f0-4570-ad5d-091fde92d938")
 	(paper "A4")
+	(title_block
+		(title "SmartHome WindowOpener")
+		(date "2026-03-21")
+	)
 	(lib_symbols
 		(symbol "Connector:Conn_ST_STDC14"
 			(exclude_from_sim no)
@@ -2728,162 +2732,10 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Sensor:AM2302"
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "U"
-				(at -3.81 6.35 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
+		(symbol "Switch:SW_Push"
+			(pin_numbers
+				(hide yes)
 			)
-			(property "Value" "AM2302"
-				(at 3.81 6.35 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" "Sensor:ASAIR_AM2302_P2.54mm_Vertical"
-				(at 0 -10.16 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" "http://akizukidenshi.com/download/ds/aosong/AM2302.pdf"
-				(at 3.81 6.35 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" "3.3 to 5.0V, Temperature and humidity module,  DHT22, AM2302"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_keywords" "digital sensor"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_fp_filters" "ASAIR*AM2302*P2.54mm*"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "AM2302_0_1"
-				(rectangle
-					(start -5.08 5.08)
-					(end 5.08 -5.08)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type background)
-					)
-				)
-			)
-			(symbol "AM2302_1_1"
-				(pin power_in line
-					(at 0 7.62 270)
-					(length 2.54)
-					(name "VDD"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin power_in line
-					(at 0 -7.62 90)
-					(length 2.54)
-					(name "GND"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "3"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 0 -7.62 90)
-					(length 2.54)
-					(hide yes)
-					(name "GND"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "4"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin bidirectional line
-					(at 7.62 0 180)
-					(length 2.54)
-					(name "SDA"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
-		(symbol "Switch:SW_MEC_5E"
 			(pin_names
 				(offset 1.016)
 				(hide yes)
@@ -2892,7 +2744,7 @@
 			(in_bom yes)
 			(on_board yes)
 			(property "Reference" "SW"
-				(at 0.635 5.715 0)
+				(at 1.27 2.54 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -2900,8 +2752,8 @@
 					(justify left)
 				)
 			)
-			(property "Value" "SW_MEC_5E"
-				(at 0 -3.175 0)
+			(property "Value" "SW_Push"
+				(at 0 -1.524 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -2909,7 +2761,7 @@
 				)
 			)
 			(property "Footprint" ""
-				(at 0 7.62 0)
+				(at 0 5.08 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -2917,8 +2769,8 @@
 					(hide yes)
 				)
 			)
-			(property "Datasheet" "http://www.apem.com/int/index.php?controller=attachment&id_attachment=1371"
-				(at 0 7.62 0)
+			(property "Datasheet" "~"
+				(at 0 5.08 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -2926,7 +2778,7 @@
 					(hide yes)
 				)
 			)
-			(property "Description" "MEC 5E single pole normally-open tactile switch"
+			(property "Description" "Push button switch, generic, two pins"
 				(at 0 0 0)
 				(effects
 					(font
@@ -2944,42 +2796,9 @@
 					(hide yes)
 				)
 			)
-			(property "ki_fp_filters" "SW*MEC*5G*"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "SW_MEC_5E_0_1"
-				(polyline
-					(pts
-						(xy -2.54 0) (xy -2.54 2.54) (xy -2.286 2.54)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -2.286 3.81) (xy 2.286 3.81)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
+			(symbol "SW_Push_0_1"
 				(circle
-					(center -1.778 2.54)
+					(center -2.032 0)
 					(radius 0.508)
 					(stroke
 						(width 0)
@@ -2991,7 +2810,7 @@
 				)
 				(polyline
 					(pts
-						(xy 0 3.81) (xy 0 5.588)
+						(xy 0 1.27) (xy 0 3.048)
 					)
 					(stroke
 						(width 0)
@@ -3002,7 +2821,7 @@
 					)
 				)
 				(circle
-					(center 1.778 2.54)
+					(center 2.032 0)
 					(radius 0.508)
 					(stroke
 						(width 0)
@@ -3014,7 +2833,7 @@
 				)
 				(polyline
 					(pts
-						(xy 2.54 0) (xy 2.54 2.54) (xy 2.286 2.54)
+						(xy 2.54 1.27) (xy -2.54 1.27)
 					)
 					(stroke
 						(width 0)
@@ -3025,7 +2844,7 @@
 					)
 				)
 				(pin passive line
-					(at -5.08 2.54 0)
+					(at -5.08 0 0)
 					(length 2.54)
 					(name "1"
 						(effects
@@ -3043,7 +2862,7 @@
 					)
 				)
 				(pin passive line
-					(at -5.08 0 0)
+					(at 5.08 0 180)
 					(length 2.54)
 					(name "2"
 						(effects
@@ -3060,46 +2879,10 @@
 						)
 					)
 				)
-				(pin passive line
-					(at 5.08 2.54 180)
-					(length 2.54)
-					(name "A"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "4"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 5.08 0 180)
-					(length 2.54)
-					(name "K"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "3"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Switch:SW_SPDT"
+		(symbol "Switch:SW_SPDT_XKB_DMx-xxxx-1"
 			(pin_names
 				(offset 0)
 				(hide yes)
@@ -3108,15 +2891,15 @@
 			(in_bom yes)
 			(on_board yes)
 			(property "Reference" "SW"
-				(at 0 5.08 0)
+				(at 0 4.318 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
 				)
 			)
-			(property "Value" "SW_SPDT"
-				(at 0 -5.08 0)
+			(property "Value" "SW_SPDT_XKB_DMx-xxxx-1"
+				(at 0 -5.588 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -3133,15 +2916,6 @@
 				)
 			)
 			(property "Datasheet" "~"
-				(at 0 -7.62 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" "Switch, single pole double throw"
 				(at 0 0 0)
 				(effects
 					(font
@@ -3150,7 +2924,7 @@
 					(hide yes)
 				)
 			)
-			(property "ki_keywords" "switch single-pole double-throw spdt ON-ON"
+			(property "Description" "Position switch"
 				(at 0 0 0)
 				(effects
 					(font
@@ -3159,10 +2933,28 @@
 					(hide yes)
 				)
 			)
-			(symbol "SW_SPDT_0_1"
+			(property "ki_keywords" "limit switch single pole double throw spdt microswitch"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "SW?XKB?DM??16U??1*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "SW_SPDT_XKB_DMx-xxxx-1_1_1"
 				(circle
 					(center -2.032 0)
-					(radius 0.4572)
+					(radius 0.508)
 					(stroke
 						(width 0)
 						(type default)
@@ -3173,7 +2965,19 @@
 				)
 				(polyline
 					(pts
-						(xy -1.651 0.254) (xy 1.651 2.286)
+						(xy -1.524 0.254) (xy 2.286 2.032)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -0.762 0.508) (xy 0.762 0.508) (xy 0.762 1.27)
 					)
 					(stroke
 						(width 0)
@@ -3185,7 +2989,7 @@
 				)
 				(circle
 					(center 2.032 2.54)
-					(radius 0.4572)
+					(radius 0.508)
 					(stroke
 						(width 0)
 						(type default)
@@ -3196,7 +3000,7 @@
 				)
 				(circle
 					(center 2.032 -2.54)
-					(radius 0.4572)
+					(radius 0.508)
 					(stroke
 						(width 0)
 						(type default)
@@ -3205,39 +3009,8 @@
 						(type none)
 					)
 				)
-			)
-			(symbol "SW_SPDT_1_1"
-				(rectangle
-					(start -3.175 3.81)
-					(end 3.175 -3.81)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type background)
-					)
-				)
 				(pin passive line
 					(at -5.08 0 0)
-					(length 2.54)
-					(name "B"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 5.08 2.54 180)
 					(length 2.54)
 					(name "A"
 						(effects
@@ -3255,7 +3028,7 @@
 					)
 				)
 				(pin passive line
-					(at 5.08 -2.54 180)
+					(at 5.08 2.54 180)
 					(length 2.54)
 					(name "C"
 						(effects
@@ -3265,6 +3038,24 @@
 						)
 					)
 					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 5.08 -2.54 180)
+					(length 2.54)
+					(name "B"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -3841,9 +3632,9 @@
 		)
 		(uuid 1aee8518-6c0e-486b-940b-241bfa104790)
 	)
-	(text "DHT22 szenzor"
+	(text "Sensors"
 		(exclude_from_sim no)
-		(at 185.166 136.906 0)
+		(at 230.632 145.288 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3853,7 +3644,7 @@
 	)
 	(text "Zigbee"
 		(exclude_from_sim no)
-		(at 237.49 160.782 0)
+		(at 239.268 104.394 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3870,16 +3661,6 @@
 			)
 		)
 		(uuid "17b253b6-f8b8-4af0-af66-a614961e2461")
-	)
-	(text "Battery management\n"
-		(exclude_from_sim no)
-		(at 146.05 159.004 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-		)
-		(uuid "1c912302-1c0d-4d94-b4bc-b2646cf27f03")
 	)
 	(text "Analóg táp csatoló kondenzátorai+ferrit"
 		(exclude_from_sim no)
@@ -3901,6 +3682,16 @@
 		)
 		(uuid "662c6ee0-fcb3-484e-9365-57cc92cd4490")
 	)
+	(text "MCU+Motors power"
+		(exclude_from_sim no)
+		(at 266.954 145.288 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "780b0042-7140-417a-ad6d-946970470dff")
+	)
 	(text "Táp csatoló kondenzátorai"
 		(exclude_from_sim no)
 		(at 225.044 16.764 0)
@@ -3911,11 +3702,15 @@
 		)
 		(uuid "c081c951-1948-4ade-9091-17e83a7b4eb5")
 	)
-	(junction
-		(at 209.55 97.79)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "03de7a11-8958-4014-85ff-e9b16379320c")
+	(text "Power LEDs"
+		(exclude_from_sim no)
+		(at 207.01 135.382 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "e79aaac3-8395-492c-b18f-08100a78ba76")
 	)
 	(junction
 		(at 158.75 35.56)
@@ -3978,10 +3773,16 @@
 		(uuid "4d5855c3-60ad-4555-8438-de772b3e5ef9")
 	)
 	(junction
-		(at 237.49 135.89)
+		(at 238.76 120.65)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "56a1cb8c-bf32-4cd8-976d-f7bebe5dbced")
+	)
+	(junction
+		(at 118.11 21.59)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "62810ba7-46e9-43da-932c-0cabb4e0ea29")
 	)
 	(junction
 		(at 250.19 44.45)
@@ -3990,13 +3791,13 @@
 		(uuid "6a90dfd2-6043-42d0-b737-684a3170ff16")
 	)
 	(junction
-		(at 237.49 143.51)
+		(at 238.76 128.27)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "72882773-6c0f-406f-aaf5-273fbf6b1200")
 	)
 	(junction
-		(at 250.19 151.13)
+		(at 251.46 135.89)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "7ad715f0-8664-4b4c-993b-b6167b88ae58")
@@ -4008,7 +3809,7 @@
 		(uuid "8ba02f0c-830b-493d-95dd-2f0c1d071adc")
 	)
 	(junction
-		(at 237.49 140.97)
+		(at 238.76 125.73)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "98906f68-6ce3-4aca-96ab-25c92fea829b")
@@ -4056,12 +3857,6 @@
 		(uuid "cbb4bfdc-d642-4e25-9905-a1d52a81de5d")
 	)
 	(junction
-		(at 209.55 151.13)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "d5d533b4-3a69-46ec-8734-618d393b2f22")
-	)
-	(junction
 		(at 256.54 27.94)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -4103,27 +3898,17 @@
 		(color 0 0 0 0)
 		(uuid "fcc67b73-abdb-4f08-b714-548793680b20")
 	)
-	(junction
-		(at 209.55 85.09)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "fe37f37e-e7c5-4c85-bd9f-6832386f4f6f")
-	)
 	(no_connect
-		(at 76.2 76.2)
-		(uuid "05a70102-25b1-4da8-aa5e-6a6383ff3bdc")
-	)
-	(no_connect
-		(at 111.76 58.42)
-		(uuid "07fbed16-b82d-4efd-90b2-dd0b80efb70b")
+		(at 111.76 78.74)
+		(uuid "08ab7f89-64df-4851-bdf5-81429c1f903d")
 	)
 	(no_connect
 		(at 101.6 25.4)
 		(uuid "090e0249-77c7-46f1-9963-540f0e6e4747")
 	)
 	(no_connect
-		(at 111.76 55.88)
-		(uuid "0f0e4336-16a5-4d46-941d-9313894fe3bd")
+		(at 111.76 58.42)
+		(uuid "0e6d4084-2088-4c1f-b4a6-580150af239b")
 	)
 	(no_connect
 		(at 111.76 101.6)
@@ -4134,8 +3919,12 @@
 		(uuid "173e10bc-f712-4c8a-8c0f-d49227555218")
 	)
 	(no_connect
-		(at 76.2 58.42)
-		(uuid "26a41596-ce66-47ac-ad59-fcb0aae234c8")
+		(at 111.76 60.96)
+		(uuid "23a56329-e791-449f-93a0-261c96340a9d")
+	)
+	(no_connect
+		(at 76.2 86.36)
+		(uuid "256bef0d-0fe8-4336-a661-ee39a88aa048")
 	)
 	(no_connect
 		(at 76.2 50.8)
@@ -4146,32 +3935,16 @@
 		(uuid "2d24e5a3-6c72-4421-90a2-adbe77932ca8")
 	)
 	(no_connect
-		(at 111.76 43.18)
-		(uuid "3294069c-a3a3-4a1d-85d3-9e2ccee0c81f")
-	)
-	(no_connect
-		(at 76.2 83.82)
-		(uuid "331c94d9-bc75-4096-a2ac-90980f50598e")
+		(at 76.2 60.96)
+		(uuid "3df26600-b2ab-4cef-8868-0613def07a50")
 	)
 	(no_connect
 		(at 111.76 86.36)
 		(uuid "3f5ac5e3-c9da-4317-9c1f-a1e2e3fae25f")
 	)
 	(no_connect
-		(at 76.2 71.12)
-		(uuid "48fda362-797e-4900-967a-ba74f36e3d2f")
-	)
-	(no_connect
-		(at 111.76 78.74)
-		(uuid "5b0b1eca-bb7e-4557-8711-759797208656")
-	)
-	(no_connect
 		(at 111.76 109.22)
 		(uuid "5ba70542-90f4-4495-a403-881203754770")
-	)
-	(no_connect
-		(at 111.76 106.68)
-		(uuid "5ce75899-f391-408f-93c9-76ed3c28cea8")
 	)
 	(no_connect
 		(at 111.76 93.98)
@@ -4182,44 +3955,16 @@
 		(uuid "64899e6e-39d7-4f68-9234-5350646839a5")
 	)
 	(no_connect
-		(at 76.2 66.04)
-		(uuid "6669d082-d859-4555-9a3e-27c821a85361")
-	)
-	(no_connect
-		(at 111.76 35.56)
-		(uuid "690615e7-895a-4852-9191-0a33f715a6f3")
-	)
-	(no_connect
-		(at 111.76 38.1)
-		(uuid "7f18918f-cbdf-443e-9f94-57a7d3e6fcd8")
-	)
-	(no_connect
-		(at 111.76 60.96)
-		(uuid "8073f75d-b0d2-4384-bb8a-423effbcac5f")
-	)
-	(no_connect
 		(at 111.76 88.9)
 		(uuid "8406fd83-6e26-48d0-8de0-af33751f9311")
 	)
 	(no_connect
-		(at 111.76 45.72)
-		(uuid "87c8025c-9c08-4997-9c82-cefb723beb17")
+		(at 76.2 68.58)
+		(uuid "9389cb16-60fb-4d26-a7d7-a758c1f15334")
 	)
 	(no_connect
-		(at 76.2 78.74)
-		(uuid "89351106-09a5-452b-af23-0d42a208b271")
-	)
-	(no_connect
-		(at 76.2 86.36)
-		(uuid "90e43120-917e-453a-be90-6ebaff4b28f2")
-	)
-	(no_connect
-		(at 111.76 76.2)
-		(uuid "95de096a-e395-4632-ac8b-f98912d36e51")
-	)
-	(no_connect
-		(at 111.76 71.12)
-		(uuid "a290fea0-0740-4b4c-82b5-663d81fa38f7")
+		(at 111.76 55.88)
+		(uuid "9c21e4a9-b68c-4aa8-be41-fac9d2cb9e03")
 	)
 	(no_connect
 		(at 111.76 111.76)
@@ -4238,32 +3983,20 @@
 		(uuid "bfedca4c-505c-478b-97a0-de74ff854639")
 	)
 	(no_connect
-		(at 76.2 60.96)
-		(uuid "c0c88066-89ff-45fe-b248-64800cc58dff")
-	)
-	(no_connect
-		(at 111.76 96.52)
-		(uuid "cb9c7eab-0f0b-4b16-a37d-11d6c34be723")
-	)
-	(no_connect
-		(at 76.2 81.28)
-		(uuid "d0c56e78-b03c-483f-8c95-96276d688121")
-	)
-	(no_connect
-		(at 111.76 99.06)
-		(uuid "d4189773-e2a8-43b9-9b69-c224bdd88b09")
-	)
-	(no_connect
-		(at 76.2 68.58)
-		(uuid "d43ba43f-6a88-4078-91c6-b9291052914a")
-	)
-	(no_connect
-		(at 76.2 73.66)
-		(uuid "dfc391ff-f4bd-4d70-8589-b825127e79f9")
+		(at 111.76 76.2)
+		(uuid "d5c2c164-67f2-421d-8c28-162d39eff9ad")
 	)
 	(no_connect
 		(at 111.76 81.28)
 		(uuid "ea794343-d24b-4f80-a307-c8710e0000e0")
+	)
+	(no_connect
+		(at 111.76 106.68)
+		(uuid "ef416053-b868-4213-bb58-96fb51e75113")
+	)
+	(no_connect
+		(at 111.76 45.72)
+		(uuid "f58e196c-310b-4f6f-b86e-92d1e06b8c1a")
 	)
 	(no_connect
 		(at 111.76 63.5)
@@ -4285,7 +4018,7 @@
 	)
 	(wire
 		(pts
-			(xy 250.19 151.13) (xy 237.49 151.13)
+			(xy 251.46 135.89) (xy 238.76 135.89)
 		)
 		(stroke
 			(width 0)
@@ -4303,16 +4036,6 @@
 		)
 		(uuid "056ff0e4-b917-410a-b7b5-d31924d7ea6d")
 	)
-	(polyline
-		(pts
-			(xy 176.53 161.29) (xy 176.53 165.1)
-		)
-		(stroke
-			(width 0)
-			(type dash)
-		)
-		(uuid "05c0612a-a268-4847-8216-e3075228d254")
-	)
 	(wire
 		(pts
 			(xy 218.44 27.94) (xy 231.14 27.94)
@@ -4325,7 +4048,7 @@
 	)
 	(wire
 		(pts
-			(xy 237.49 135.89) (xy 245.11 135.89)
+			(xy 238.76 120.65) (xy 246.38 120.65)
 		)
 		(stroke
 			(width 0)
@@ -4395,16 +4118,6 @@
 	)
 	(wire
 		(pts
-			(xy 209.55 85.09) (xy 218.44 85.09)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "0fecfac6-d5f5-41b4-b2e7-ab0a3038cf69")
-	)
-	(wire
-		(pts
 			(xy 266.7 71.12) (xy 269.24 71.12)
 		)
 		(stroke
@@ -4452,6 +4165,16 @@
 			(type dash)
 		)
 		(uuid "1847fb7c-6fb7-4ad2-bbcc-83713f1b937a")
+	)
+	(wire
+		(pts
+			(xy 72.39 78.74) (xy 76.2 78.74)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "19554721-308b-46b1-b792-1844e0d10769")
 	)
 	(wire
 		(pts
@@ -4515,13 +4238,33 @@
 	)
 	(wire
 		(pts
-			(xy 209.55 97.79) (xy 218.44 97.79)
+			(xy 111.76 71.12) (xy 114.3 71.12)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "2ce9022e-6f25-4922-ab16-3f694ed46447")
+		(uuid "274cf250-1c7b-4765-b0e2-b085078a420f")
+	)
+	(wire
+		(pts
+			(xy 114.3 21.59) (xy 118.11 21.59)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2c40454a-67e3-41a0-b3d8-1ba51d21b8a4")
+	)
+	(polyline
+		(pts
+			(xy 200.66 152.4) (xy 200.66 133.35)
+		)
+		(stroke
+			(width 0)
+			(type dash)
+		)
+		(uuid "2d573c51-803f-4e62-9d29-835672bb4ccc")
 	)
 	(wire
 		(pts
@@ -4532,6 +4275,16 @@
 			(type default)
 		)
 		(uuid "2d6031e1-08d7-4f13-a9bb-fc1e1898ad98")
+	)
+	(wire
+		(pts
+			(xy 114.3 35.56) (xy 114.3 21.59)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2f0a6f80-c93f-4521-915a-d7477fe271b1")
 	)
 	(wire
 		(pts
@@ -4585,16 +4338,6 @@
 	)
 	(wire
 		(pts
-			(xy 209.55 138.43) (xy 209.55 142.24)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "35e3df56-e64f-4cb5-a037-dce36fefd70f")
-	)
-	(wire
-		(pts
 			(xy 218.44 85.09) (xy 218.44 87.63)
 		)
 		(stroke
@@ -4625,16 +4368,6 @@
 	)
 	(wire
 		(pts
-			(xy 204.47 151.13) (xy 209.55 151.13)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "39af5fb2-85be-401f-9cae-e533d0b4dce8")
-	)
-	(wire
-		(pts
 			(xy 96.52 17.78) (xy 96.52 25.4)
 		)
 		(stroke
@@ -4642,6 +4375,16 @@
 			(type default)
 		)
 		(uuid "39dd3443-e4e5-4e19-bb8d-012fe5a098de")
+	)
+	(wire
+		(pts
+			(xy 111.76 35.56) (xy 114.3 35.56)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3a959771-b08f-4c28-a45d-10222dd23c88")
 	)
 	(polyline
 		(pts
@@ -4675,6 +4418,16 @@
 	)
 	(wire
 		(pts
+			(xy 111.76 43.18) (xy 114.3 43.18)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3f5a5ee8-4df6-44d5-bfbc-054afa567acd")
+	)
+	(wire
+		(pts
 			(xy 111.76 68.58) (xy 121.92 68.58)
 		)
 		(stroke
@@ -4682,6 +4435,16 @@
 			(type default)
 		)
 		(uuid "3fdea540-b07b-4992-ad89-409d7674f972")
+	)
+	(wire
+		(pts
+			(xy 114.3 13.97) (xy 118.11 13.97)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "410aa15f-aa1e-454a-89e5-3296e2595a58")
 	)
 	(wire
 		(pts
@@ -4702,16 +4465,6 @@
 			(type default)
 		)
 		(uuid "444be272-0615-4204-9551-6d94462181d7")
-	)
-	(polyline
-		(pts
-			(xy 134.62 133.35) (xy 134.62 161.29)
-		)
-		(stroke
-			(width 0)
-			(type dash)
-		)
-		(uuid "45bb1352-08e3-4397-a009-e443ef6aec1a")
 	)
 	(wire
 		(pts
@@ -4785,13 +4538,23 @@
 	)
 	(polyline
 		(pts
-			(xy 283.21 165.1) (xy 283.21 101.6)
+			(xy 283.21 101.6) (xy 283.21 163.83)
 		)
 		(stroke
 			(width 0)
 			(type dash)
 		)
-		(uuid "4b6e407d-e22e-40e1-b343-aec900e1c455")
+		(uuid "4b27f850-b864-4b03-8984-93984818caed")
+	)
+	(wire
+		(pts
+			(xy 111.76 38.1) (xy 114.3 38.1)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4be3b062-427c-4daa-aba9-8afe5b5aa5c0")
 	)
 	(wire
 		(pts
@@ -4802,16 +4565,6 @@
 			(type default)
 		)
 		(uuid "4be3c57a-680e-40e7-89a4-cb47ca8e610d")
-	)
-	(wire
-		(pts
-			(xy 111.76 48.26) (xy 121.92 48.26)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "4c9a507b-d65f-45bb-aa09-af604881b10b")
 	)
 	(polyline
 		(pts
@@ -4835,7 +4588,7 @@
 	)
 	(wire
 		(pts
-			(xy 237.49 135.89) (xy 237.49 140.97)
+			(xy 238.76 120.65) (xy 238.76 125.73)
 		)
 		(stroke
 			(width 0)
@@ -4862,16 +4615,6 @@
 			(type dash)
 		)
 		(uuid "514abdb4-a4c4-4e2e-a362-47e0246c7712")
-	)
-	(wire
-		(pts
-			(xy 196.85 138.43) (xy 196.85 143.51)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "52be4b8a-9259-4fc6-a854-39e772bf6094")
 	)
 	(wire
 		(pts
@@ -4925,6 +4668,16 @@
 	)
 	(wire
 		(pts
+			(xy 111.76 99.06) (xy 114.3 99.06)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "57197a5b-83ab-45e7-93a0-068944d4c6de")
+	)
+	(wire
+		(pts
 			(xy 193.04 102.87) (xy 193.04 107.95)
 		)
 		(stroke
@@ -4955,7 +4708,7 @@
 	)
 	(wire
 		(pts
-			(xy 207.01 85.09) (xy 209.55 85.09)
+			(xy 207.01 85.09) (xy 218.44 85.09)
 		)
 		(stroke
 			(width 0)
@@ -5015,7 +4768,7 @@
 	)
 	(wire
 		(pts
-			(xy 66.04 55.88) (xy 76.2 55.88)
+			(xy 72.39 55.88) (xy 76.2 55.88)
 		)
 		(stroke
 			(width 0)
@@ -5075,7 +4828,7 @@
 	)
 	(wire
 		(pts
-			(xy 257.81 151.13) (xy 250.19 151.13)
+			(xy 259.08 135.89) (xy 251.46 135.89)
 		)
 		(stroke
 			(width 0)
@@ -5145,16 +4898,6 @@
 	)
 	(wire
 		(pts
-			(xy 143.51 143.51) (xy 148.59 143.51)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "7d5e0bb1-71b5-4d6e-b456-c480e8b99ca1")
-	)
-	(wire
-		(pts
 			(xy 143.51 35.56) (xy 143.51 40.64)
 		)
 		(stroke
@@ -5165,23 +4908,13 @@
 	)
 	(wire
 		(pts
-			(xy 237.49 140.97) (xy 237.49 143.51)
+			(xy 238.76 125.73) (xy 238.76 128.27)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "80f9b6f5-691b-4667-b3ab-007f7e89f65a")
-	)
-	(wire
-		(pts
-			(xy 209.55 86.36) (xy 209.55 85.09)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "812b0308-3623-4d95-ac6f-4edd8a3a069d")
 	)
 	(wire
 		(pts
@@ -5235,7 +4968,7 @@
 	)
 	(wire
 		(pts
-			(xy 270.51 138.43) (xy 279.4 138.43)
+			(xy 271.78 123.19) (xy 280.67 123.19)
 		)
 		(stroke
 			(width 0)
@@ -5295,13 +5028,13 @@
 	)
 	(wire
 		(pts
-			(xy 209.55 149.86) (xy 209.55 151.13)
+			(xy 72.39 73.66) (xy 76.2 73.66)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "8e6e4321-ea9c-471b-8be9-f08cec0a204c")
+		(uuid "90973573-1258-43ec-b27b-724b2aa81043")
 	)
 	(wire
 		(pts
@@ -5333,9 +5066,19 @@
 		)
 		(uuid "92419f8b-014d-4dea-8581-e4ef3ac316f6")
 	)
+	(polyline
+		(pts
+			(xy 226.06 143.51) (xy 283.21 143.51)
+		)
+		(stroke
+			(width 0)
+			(type dash)
+		)
+		(uuid "933c67cc-f75c-4980-9ca2-2d35435f080a")
+	)
 	(wire
 		(pts
-			(xy 237.49 143.51) (xy 237.49 151.13)
+			(xy 238.76 128.27) (xy 238.76 135.89)
 		)
 		(stroke
 			(width 0)
@@ -5345,17 +5088,7 @@
 	)
 	(wire
 		(pts
-			(xy 209.55 151.13) (xy 218.44 151.13)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "980a3cb0-7c14-4cf7-9c18-bd99902d404e")
-	)
-	(wire
-		(pts
-			(xy 270.51 135.89) (xy 279.4 135.89)
+			(xy 271.78 120.65) (xy 280.67 120.65)
 		)
 		(stroke
 			(width 0)
@@ -5365,7 +5098,7 @@
 	)
 	(polyline
 		(pts
-			(xy 226.06 165.1) (xy 226.06 133.35)
+			(xy 226.06 163.83) (xy 226.06 133.35)
 		)
 		(stroke
 			(width 0)
@@ -5433,6 +5166,16 @@
 		)
 		(uuid "a2e31793-4909-4fc9-8d3c-daa9f70d93e6")
 	)
+	(polyline
+		(pts
+			(xy 256.54 143.51) (xy 256.54 163.83)
+		)
+		(stroke
+			(width 0)
+			(type dash)
+		)
+		(uuid "a5776348-d898-49f7-971f-6dd476411843")
+	)
 	(wire
 		(pts
 			(xy 266.7 93.98) (xy 266.7 95.25)
@@ -5442,6 +5185,16 @@
 			(type default)
 		)
 		(uuid "a5a23917-2e25-4565-887f-5e929126d1fd")
+	)
+	(wire
+		(pts
+			(xy 72.39 81.28) (xy 76.2 81.28)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a69a42f2-f697-43c1-bc2b-e19f0a137f30")
 	)
 	(wire
 		(pts
@@ -5495,6 +5248,16 @@
 	)
 	(wire
 		(pts
+			(xy 72.39 58.42) (xy 76.2 58.42)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "afac500c-85bd-4f04-871a-27b4fa1e7857")
+	)
+	(wire
+		(pts
 			(xy 238.76 73.66) (xy 238.76 66.04)
 		)
 		(stroke
@@ -5525,7 +5288,7 @@
 	)
 	(wire
 		(pts
-			(xy 270.51 140.97) (xy 279.4 140.97)
+			(xy 271.78 125.73) (xy 280.67 125.73)
 		)
 		(stroke
 			(width 0)
@@ -5533,19 +5296,9 @@
 		)
 		(uuid "b3cc91a2-3c21-4d76-ab61-1f219fae5bb7")
 	)
-	(polyline
-		(pts
-			(xy 134.62 161.29) (xy 176.53 161.29)
-		)
-		(stroke
-			(width 0)
-			(type dash)
-		)
-		(uuid "b591470b-2f38-4ce2-b45d-c41051fc4dad")
-	)
 	(wire
 		(pts
-			(xy 237.49 133.35) (xy 237.49 135.89)
+			(xy 238.76 118.11) (xy 238.76 120.65)
 		)
 		(stroke
 			(width 0)
@@ -5555,7 +5308,7 @@
 	)
 	(wire
 		(pts
-			(xy 250.19 151.13) (xy 250.19 153.67)
+			(xy 251.46 135.89) (xy 251.46 137.16)
 		)
 		(stroke
 			(width 0)
@@ -5595,6 +5348,16 @@
 	)
 	(wire
 		(pts
+			(xy 111.76 50.8) (xy 128.27 50.8)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c56a3c6a-8ea8-4c60-a0a2-c6c90c4af6e2")
+	)
+	(wire
+		(pts
 			(xy 231.14 44.45) (xy 218.44 44.45)
 		)
 		(stroke
@@ -5603,19 +5366,19 @@
 		)
 		(uuid "c7eecb18-548a-42a2-9ee7-c8a244944b46")
 	)
-	(polyline
+	(wire
 		(pts
-			(xy 176.53 161.29) (xy 176.53 133.35)
+			(xy 72.39 76.2) (xy 76.2 76.2)
 		)
 		(stroke
 			(width 0)
-			(type dash)
+			(type default)
 		)
-		(uuid "c907fca5-20d0-4641-b843-304c07a8ea31")
+		(uuid "c8994907-a80c-44fe-8b65-b05bb7626288")
 	)
 	(wire
 		(pts
-			(xy 252.73 125.73) (xy 257.81 125.73)
+			(xy 259.08 109.22) (xy 259.08 110.49)
 		)
 		(stroke
 			(width 0)
@@ -5632,6 +5395,26 @@
 			(type default)
 		)
 		(uuid "cb2a7d03-d6d4-4073-a5b2-9e44f73e048d")
+	)
+	(wire
+		(pts
+			(xy 72.39 83.82) (xy 76.2 83.82)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "cc5a3b0c-9145-4e1c-a7b9-5d71c1a53060")
+	)
+	(wire
+		(pts
+			(xy 111.76 96.52) (xy 114.3 96.52)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "cd3e5064-a649-4d77-a98c-40e12b5c5f76")
 	)
 	(wire
 		(pts
@@ -5665,23 +5448,13 @@
 	)
 	(polyline
 		(pts
-			(xy 226.06 165.1) (xy 283.21 165.1)
+			(xy 226.06 163.83) (xy 283.21 163.83)
 		)
 		(stroke
 			(width 0)
 			(type dash)
 		)
 		(uuid "d4c7e102-eecd-4a26-932a-f81cea59c870")
-	)
-	(polyline
-		(pts
-			(xy 176.53 165.1) (xy 226.06 165.1)
-		)
-		(stroke
-			(width 0)
-			(type dash)
-		)
-		(uuid "d5c2e73d-9617-47b9-94ab-93dbdda1d841")
 	)
 	(wire
 		(pts
@@ -5715,6 +5488,16 @@
 	)
 	(wire
 		(pts
+			(xy 72.39 71.12) (xy 76.2 71.12)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "dc43ef06-77e2-4852-b123-c7a902671f16")
+	)
+	(wire
+		(pts
 			(xy 250.19 44.45) (xy 250.19 49.53)
 		)
 		(stroke
@@ -5725,13 +5508,13 @@
 	)
 	(wire
 		(pts
-			(xy 111.76 53.34) (xy 121.92 53.34)
+			(xy 72.39 66.04) (xy 76.2 66.04)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "dd92aa57-1f96-4b1f-8034-93a837784fe9")
+		(uuid "dcecf694-7392-4779-9a71-0163acaf6b70")
 	)
 	(wire
 		(pts
@@ -5835,23 +5618,13 @@
 	)
 	(wire
 		(pts
-			(xy 270.51 133.35) (xy 279.4 133.35)
+			(xy 271.78 118.11) (xy 280.67 118.11)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "f23f28e4-c909-4b97-90d1-fdab97225e7c")
-	)
-	(wire
-		(pts
-			(xy 111.76 50.8) (xy 121.92 50.8)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "f444f71e-b2bd-4003-ae8b-68599a5d008a")
 	)
 	(wire
 		(pts
@@ -5885,6 +5658,16 @@
 	)
 	(wire
 		(pts
+			(xy 111.76 53.34) (xy 128.27 53.34)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f89cd5af-71e0-40d7-9b13-c3b4ce478217")
+	)
+	(wire
+		(pts
 			(xy 248.92 73.66) (xy 259.08 73.66)
 		)
 		(stroke
@@ -5892,16 +5675,6 @@
 			(type default)
 		)
 		(uuid "f9568f32-65df-4201-9ee0-1360bb443413")
-	)
-	(wire
-		(pts
-			(xy 209.55 97.79) (xy 209.55 96.52)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "f9895fdd-fc3a-462a-9bff-f41876e94c42")
 	)
 	(wire
 		(pts
@@ -5915,13 +5688,23 @@
 	)
 	(wire
 		(pts
-			(xy 207.01 97.79) (xy 209.55 97.79)
+			(xy 207.01 97.79) (xy 218.44 97.79)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "fbc046bd-48a2-406a-ae79-a57d45f65bb5")
+	)
+	(polyline
+		(pts
+			(xy 226.06 152.4) (xy 200.66 152.4)
+		)
+		(stroke
+			(width 0)
+			(type dash)
+		)
+		(uuid "fc43fe84-968e-4813-9033-f55a3c565890")
 	)
 	(wire
 		(pts
@@ -5933,8 +5716,18 @@
 		)
 		(uuid "fed0a4e7-c614-4515-8fd2-167de99fff6d")
 	)
+	(wire
+		(pts
+			(xy 111.76 48.26) (xy 128.27 48.26)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ff3c0767-7803-4b1c-82bf-8c7e1307b0b6")
+	)
 	(label "CSEL"
-		(at 279.4 140.97 180)
+		(at 280.67 125.73 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -6023,18 +5816,8 @@
 		)
 		(uuid "63e7f059-479a-407e-81af-68f0bf1f1140")
 	)
-	(label "3V3"
-		(at 196.85 138.43 270)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "79bd24ce-7a94-4420-b223-6bbd736f85e2")
-	)
 	(label "MOSI"
-		(at 121.92 50.8 180)
+		(at 128.27 50.8 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -6054,7 +5837,7 @@
 		(uuid "80625aab-090f-4c1e-802e-8bf76a9e9b6a")
 	)
 	(label "MOSI"
-		(at 279.4 135.89 180)
+		(at 280.67 120.65 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -6062,16 +5845,6 @@
 			(justify right bottom)
 		)
 		(uuid "81141b4e-ac74-4502-92df-05d73b3f1591")
-	)
-	(label "3V3"
-		(at 209.55 138.43 270)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "8833d888-83ea-46ca-8555-18041fb3f81e")
 	)
 	(label "SWCLK"
 		(at 121.92 68.58 180)
@@ -6113,26 +5886,6 @@
 		)
 		(uuid "a11c14e0-6c76-4885-a56a-74c5895ff41d")
 	)
-	(label "DHT22"
-		(at 218.44 151.13 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "a6b2d65b-c522-4fe1-849f-a4727cd12a36")
-	)
-	(label "3V3"
-		(at 143.51 143.51 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "a88c104c-faeb-4c53-90ad-51a60a789ba7")
-	)
 	(label "3V3"
 		(at 96.52 17.78 270)
 		(effects
@@ -6144,7 +5897,7 @@
 		(uuid "adaba495-f54a-4730-b50b-94e791ff286c")
 	)
 	(label "CSEL"
-		(at 121.92 53.34 180)
+		(at 128.27 53.34 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -6184,7 +5937,7 @@
 		(uuid "c9e6794f-a07e-4e84-92de-647b3af165a8")
 	)
 	(label "MISO"
-		(at 121.92 48.26 180)
+		(at 128.27 48.26 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -6204,7 +5957,7 @@
 		(uuid "d52df93d-d75c-4a85-bd29-478821779c4f")
 	)
 	(label "MISO"
-		(at 279.4 133.35 180)
+		(at 280.67 118.11 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -6233,16 +5986,6 @@
 		)
 		(uuid "e1c8ac8b-64f3-4988-954e-68e550c638f3")
 	)
-	(label "DHT22"
-		(at 66.04 55.88 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "ec420822-9762-40fd-b3a9-0663ba352a36")
-	)
 	(label "RESET"
 		(at 227.33 85.09 180)
 		(effects
@@ -6254,7 +5997,7 @@
 		(uuid "f0e05fdc-e988-44c7-9b1a-2b3af071abec")
 	)
 	(label "SCK"
-		(at 279.4 138.43 180)
+		(at 280.67 123.19 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -6273,9 +6016,9 @@
 		)
 		(uuid "f4209312-f34a-424c-b459-521261b3206c")
 	)
-	(global_label "3V3"
-		(shape input)
-		(at 148.59 143.51 0)
+	(global_label "IN2_2"
+		(shape output)
+		(at 114.3 99.06 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -6283,14 +6026,300 @@
 			)
 			(justify left)
 		)
-		(uuid "994760be-43a5-4054-8207-5b94c43aff75")
+		(uuid "1c77d64c-c0c8-4f66-aa18-e2deeaf95f52")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 155.0828 143.51 0)
+			(at 122.6071 99.06 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "ADC1"
+		(shape output)
+		(at 114.3 13.97 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "2ea040fe-1592-4cb0-9c1f-c2a4faa41296")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 106.4767 13.97 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "DHT22"
+		(shape bidirectional)
+		(at 72.39 55.88 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "58d969be-7850-417e-8857-2bfbb220f7bf")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 62.3064 55.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "LED6"
+		(shape output)
+		(at 72.39 81.28 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "61a2fdd0-2e2d-4110-8922-51f1acf5c71e")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 64.7482 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "LED5"
+		(shape output)
+		(at 72.39 78.74 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "61c6cde1-f775-4aa4-a295-30a362563f32")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 64.7482 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "IN1_1"
+		(shape output)
+		(at 114.3 71.12 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "742880c6-fd83-4070-8db9-e57230384835")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 122.6071 71.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "ADC2"
+		(shape output)
+		(at 114.3 38.1 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "8ab79d94-454b-4959-b2f2-b409e5b9967d")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 122.1233 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "IN1_2"
+		(shape output)
+		(at 114.3 96.52 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "8ba8d467-a519-43dd-8fca-0f0508ada6a1")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 122.6071 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "LED7"
+		(shape output)
+		(at 72.39 83.82 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "b8e67394-13a2-4bec-93a2-53f78a1071fb")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 64.7482 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "ADC3"
+		(shape output)
+		(at 114.3 43.18 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "c12d25b6-b475-478d-9385-1a5f716629fa")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 122.1233 43.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "LED2"
+		(shape output)
+		(at 72.39 58.42 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "e8aad5e3-bc42-4319-a4ca-1ea6924eaf77")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 64.7482 58.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "IN2_1"
+		(shape output)
+		(at 72.39 71.12 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "f0e3d5e9-a2d6-4d09-afe8-8cd6bef93524")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 64.0829 71.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "LED4"
+		(shape output)
+		(at 72.39 76.2 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "f5d69cac-3de6-4581-a6f1-4fa1d9a19388")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 64.7482 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "LED3"
+		(shape output)
+		(at 72.39 73.66 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "f5d98ed1-36e4-49cb-a8f2-54b4c17614a1")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 64.7482 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
 				(hide yes)
 			)
 		)
@@ -6330,7 +6359,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.farnell.com/datasheets/3929463.pdf"
 			(at 151.13 35.56 0)
 			(effects
 				(font
@@ -6348,6 +6377,15 @@
 				(hide yes)
 			)
 		)
+		(property "Store link" "https://hu.farnell.com/raltron/as-8-000-20/crystal-8mhz-20pf-11-35mm-x-5mm/dp/4165726"
+			(at 151.13 35.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "04b004c3-0bef-445c-afd5-2e303306d7a7")
 		)
@@ -6355,7 +6393,7 @@
 			(uuid "a7568f82-c444-4f71-8cf8-d481e616e52b")
 		)
 		(instances
-			(project "Aramkortervezes_projekt"
+			(project "WindowOpener"
 				(path "/9cc66d3b-a4f0-4570-ad5d-091fde92d938"
 					(reference "Y1")
 					(unit 1)
@@ -6421,7 +6459,7 @@
 			(uuid "403651ef-43a3-4fdc-bcf1-99481f0ae686")
 		)
 		(instances
-			(project "Aramkortervezes_projekt"
+			(project "WindowOpener"
 				(path "/9cc66d3b-a4f0-4570-ad5d-091fde92d938"
 					(reference "#PWR014")
 					(unit 1)
@@ -6455,7 +6493,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Alkatreszkonyvtar:FerriteBead"
+		(property "Footprint" "Inductor_THT:L_Axial_L9.5mm_D4.0mm_P12.70mm_Horizontal_Fastron_SMCC"
 			(at 245.11 75.438 90)
 			(effects
 				(font
@@ -6464,7 +6502,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "~https://www.farnell.com/datasheets/2864194.pdf"
 			(at 245.11 73.66 0)
 			(effects
 				(font
@@ -6482,6 +6520,15 @@
 				(hide yes)
 			)
 		)
+		(property "Store link" "https://hu.farnell.com/multicomp-pro/mcab-035075-33/ferrite-bead-100-ohm-3a-axial/dp/9265244"
+			(at 245.11 73.66 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "8747f8a2-866d-4369-8d94-05268f81aab1")
 		)
@@ -6489,7 +6536,7 @@
 			(uuid "a840aa23-39fc-4e7d-a9ea-a4dcc66545ed")
 		)
 		(instances
-			(project "Aramkortervezes_projekt"
+			(project "WindowOpener"
 				(path "/9cc66d3b-a4f0-4570-ad5d-091fde92d938"
 					(reference "FB1")
 					(unit 1)
@@ -6498,33 +6545,17 @@
 		)
 	)
 	(symbol
-		(lib_id "Switch:SW_MEC_5E")
-		(at 209.55 91.44 90)
+		(lib_id "power:GND")
+		(at 118.11 29.21 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "09cf4ebf-f39c-4066-b8a3-8a15c52f6767")
-		(property "Reference" "SW1"
-			(at 199.39 91.44 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "SW_MEC_5E"
-			(at 201.93 91.44 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Button_Switch_SMD:SW_MEC_5GSH9"
-			(at 201.93 91.44 0)
+		(uuid "1077d01e-c15a-4170-a990-0153d752c322")
+		(property "Reference" "#PWR041"
+			(at 118.11 35.56 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6532,8 +6563,16 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "http://www.apem.com/int/index.php?controller=attachment&id_attachment=1371"
-			(at 201.93 91.44 0)
+		(property "Value" "GND"
+			(at 118.11 34.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 118.11 29.21 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6541,8 +6580,17 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "MEC 5E single pole normally-open tactile switch"
-			(at 209.55 91.44 0)
+		(property "Datasheet" ""
+			(at 118.11 29.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 118.11 29.21 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6551,21 +6599,12 @@
 			)
 		)
 		(pin "1"
-			(uuid "e76fbff2-dc0a-43ae-b5cb-71a62191930c")
-		)
-		(pin "4"
-			(uuid "636bd51d-1555-43aa-b3b7-3a786e5c3733")
-		)
-		(pin "2"
-			(uuid "fded4450-316b-406b-9833-86b160a9ca6b")
-		)
-		(pin "3"
-			(uuid "f7dbe611-4d05-4e6f-a452-257eefbd07ca")
+			(uuid "e4e8af90-6c4f-4f6c-b4d0-a47e66e2f6c7")
 		)
 		(instances
-			(project "Aramkortervezes_projekt"
+			(project "WindowOpener"
 				(path "/9cc66d3b-a4f0-4570-ad5d-091fde92d938"
-					(reference "SW1")
+					(reference "#PWR041")
 					(unit 1)
 				)
 			)
@@ -6605,7 +6644,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://4donline.ihs.com/images/VipMasterIC/IC/VISH/VISH-S-A0025774705/VISH-S-A0025774688-1.pdf?hkey=6D3A4C79FDBF58556ACFDE234799DDF0"
 			(at 189.23 107.95 0)
 			(effects
 				(font
@@ -6616,6 +6655,15 @@
 		)
 		(property "Description" "Resistor"
 			(at 189.23 107.95 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Store link" "https://hu.farnell.com/vishay/crcw20100000z0ef/res-0r-0-75w-2010-thick-film/dp/1653190"
+			(at 189.23 107.95 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6630,7 +6678,7 @@
 			(uuid "6b88c0de-55da-4527-ac21-42e95289da31")
 		)
 		(instances
-			(project "Aramkortervezes_projekt"
+			(project "WindowOpener"
 				(path "/9cc66d3b-a4f0-4570-ad5d-091fde92d938"
 					(reference "R8")
 					(unit 1)
@@ -6640,7 +6688,7 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 241.3 140.97 90)
+		(at 242.57 125.73 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -6648,7 +6696,7 @@
 		(dnp no)
 		(uuid "17506b4e-fb75-4a48-a169-17baa096e152")
 		(property "Reference" "R21"
-			(at 241.3 136.906 90)
+			(at 242.57 121.666 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6656,7 +6704,7 @@
 			)
 		)
 		(property "Value" "0R"
-			(at 241.3 138.43 90)
+			(at 242.57 123.19 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6664,7 +6712,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_2010_5025Metric_Pad1.40x2.65mm_HandSolder"
-			(at 241.3 142.748 90)
+			(at 242.57 127.508 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6672,8 +6720,8 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
-			(at 241.3 140.97 0)
+		(property "Datasheet" "https://4donline.ihs.com/images/VipMasterIC/IC/VISH/VISH-S-A0025774705/VISH-S-A0025774688-1.pdf?hkey=6D3A4C79FDBF58556ACFDE234799DDF0"
+			(at 242.57 125.73 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6682,7 +6730,16 @@
 			)
 		)
 		(property "Description" "Resistor"
-			(at 241.3 140.97 0)
+			(at 242.57 125.73 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Store link" "https://hu.farnell.com/vishay/crcw20100000z0ef/res-0r-0-75w-2010-thick-film/dp/1653190"
+			(at 242.57 125.73 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6697,7 +6754,7 @@
 			(uuid "5f6c43df-29b3-49be-80d2-8ed40cf35bd1")
 		)
 		(instances
-			(project "Aramkortervezes_projekt"
+			(project "WindowOpener"
 				(path "/9cc66d3b-a4f0-4570-ad5d-091fde92d938"
 					(reference "R21")
 					(unit 1)
@@ -6739,7 +6796,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://4donline.ihs.com/images/VipMasterIC/IC/VISH/VISH-S-A0025774705/VISH-S-A0025774688-1.pdf?hkey=6D3A4C79FDBF58556ACFDE234799DDF0"
 			(at 187.96 22.86 0)
 			(effects
 				(font
@@ -6757,6 +6814,15 @@
 				(hide yes)
 			)
 		)
+		(property "Store link" "https://hu.farnell.com/vishay/crcw20100000z0ef/res-0r-0-75w-2010-thick-film/dp/1653190"
+			(at 187.96 22.86 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "3189b448-2c16-43fb-bf65-9bf96e0613a3")
 		)
@@ -6764,7 +6830,7 @@
 			(uuid "197d558d-3339-4ea4-a0db-deea3a5c4943")
 		)
 		(instances
-			(project "Aramkortervezes_projekt"
+			(project "WindowOpener"
 				(path "/9cc66d3b-a4f0-4570-ad5d-091fde92d938"
 					(reference "R2")
 					(unit 1)
@@ -6830,7 +6896,7 @@
 			(uuid "31c9a700-9652-4f8b-98b6-05a09ee2bdd9")
 		)
 		(instances
-			(project "Aramkortervezes_projekt"
+			(project "WindowOpener"
 				(path "/9cc66d3b-a4f0-4570-ad5d-091fde92d938"
 					(reference "#PWR01")
 					(unit 1)
@@ -6857,7 +6923,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "34pF"
+		(property "Value" "33pF"
 			(at 162.56 45.7199 0)
 			(effects
 				(font
@@ -6866,7 +6932,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder"
+		(property "Footprint" "Capacitor_SMD:C_1206_3216Metric_Pad1.33x1.80mm_HandSolder"
 			(at 159.7152 48.26 0)
 			(effects
 				(font
@@ -6875,7 +6941,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.hestore.hu/prod_getfile.php?id=17344"
 			(at 158.75 44.45 0)
 			(effects
 				(font
@@ -6893,6 +6959,15 @@
 				(hide yes)
 			)
 		)
+		(property "Store link" "https://www.hestore.hu/prod_10046502.html"
+			(at 158.75 44.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "39da1824-08a6-4797-8ba0-ff1f5cd54566")
 		)
@@ -6900,7 +6975,7 @@
 			(uuid "966c979e-3ea3-46aa-adff-2ef2c6b95b81")
 		)
 		(instances
-			(project "Aramkortervezes_projekt"
+			(project "WindowOpener"
 				(path "/9cc66d3b-a4f0-4570-ad5d-091fde92d938"
 					(reference "C10")
 					(unit 1)
@@ -6942,7 +7017,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.yageogroup.com/component-documentation/download/specsheet/RC2010JK-07330RL"
 			(at 156.21 22.86 0)
 			(effects
 				(font
@@ -6960,6 +7035,15 @@
 				(hide yes)
 			)
 		)
+		(property "Store link" "https://hu.farnell.com/yageo/rc2010jk-07330rl/res-330r-5-0-75w-2010-thick-film/dp/3496404"
+			(at 156.21 22.86 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "657211b0-d87b-498b-b382-d6cd98dc3f18")
 		)
@@ -6967,7 +7051,7 @@
 			(uuid "080c7e03-9d53-4970-81f5-280a08f53795")
 		)
 		(instances
-			(project "Aramkortervezes_projekt"
+			(project "WindowOpener"
 				(path "/9cc66d3b-a4f0-4570-ad5d-091fde92d938"
 					(reference "R1")
 					(unit 1)
@@ -6976,44 +7060,32 @@
 		)
 	)
 	(symbol
-		(lib_id "Sensor:AM2302")
-		(at 196.85 151.13 0)
+		(lib_id "Device:R")
+		(at 118.11 17.78 180)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "28fdcb66-ddf5-4207-8f9e-b805ccfc67d9")
-		(property "Reference" "U2"
-			(at 190.5 149.8599 0)
+		(uuid "282073d1-e007-42dc-a3fc-f5bf095c7f65")
+		(property "Reference" "R41"
+			(at 113.03 17.78 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify right)
 			)
 		)
-		(property "Value" "AM2302"
-			(at 190.5 152.3999 0)
+		(property "Value" "1k"
+			(at 115.57 17.78 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify right)
 			)
 		)
-		(property "Footprint" "Sensor:ASAIR_AM2302_P2.54mm_Vertical"
-			(at 196.85 161.29 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "http://akizukidenshi.com/download/ds/aosong/AM2302.pdf"
-			(at 200.66 144.78 0)
+		(property "Footprint" "Resistor_SMD:R_2010_5025Metric_Pad1.40x2.65mm_HandSolder"
+			(at 119.888 17.78 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7021,8 +7093,8 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "3.3 to 5.0V, Temperature and humidity module,  DHT22, AM2302"
-			(at 196.85 151.13 0)
+		(property "Datasheet" "https://www.yageogroup.com/component-documentation/download/specsheet/RC2010JK-07100RL"
+			(at 118.11 17.78 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7030,22 +7102,110 @@
 				(hide yes)
 			)
 		)
-		(pin "4"
-			(uuid "d57b8017-ffa1-4c0b-b52f-637105d31bee")
+		(property "Description" "Resistor"
+			(at 118.11 17.78 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Store link" "https://hu.farnell.com/yageo/rc2010jk-07100rl/res-100r-5-0-75w-2010-thick-film/dp/3496392"
+			(at 118.11 17.78 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
 		)
 		(pin "2"
-			(uuid "c7301823-5fac-4225-9843-6fe898a8b08c")
-		)
-		(pin "3"
-			(uuid "3061b3c5-81d2-4fbb-a2bf-9aed8064fcc1")
+			(uuid "b3b7be8d-7909-4f9f-bc4b-fa31b2eb2f3e")
 		)
 		(pin "1"
-			(uuid "3d2d8105-a261-4fbf-bb9f-00b546e0c4f1")
+			(uuid "cdd3b563-129f-4f52-b8d1-9eb53b435f2a")
 		)
 		(instances
-			(project ""
+			(project "WindowOpener"
 				(path "/9cc66d3b-a4f0-4570-ad5d-091fde92d938"
-					(reference "U2")
+					(reference "R41")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 118.11 25.4 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "34ddca9d-259d-42ca-9af2-39b3fed83e1c")
+		(property "Reference" "R42"
+			(at 113.03 25.4 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "1k"
+			(at 115.57 25.4 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_2010_5025Metric_Pad1.40x2.65mm_HandSolder"
+			(at 119.888 25.4 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.yageogroup.com/component-documentation/download/specsheet/RC2010JK-07100RL"
+			(at 118.11 25.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 118.11 25.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Store link" "https://hu.farnell.com/yageo/rc2010jk-07100rl/res-100r-5-0-75w-2010-thick-film/dp/3496392"
+			(at 118.11 25.4 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "934d0a17-9132-43b0-8e12-fef8017eef83")
+		)
+		(pin "1"
+			(uuid "52f28a5d-bb0d-4708-a154-5e4c62277037")
+		)
+		(instances
+			(project "WindowOpener"
+				(path "/9cc66d3b-a4f0-4570-ad5d-091fde92d938"
+					(reference "R42")
 					(unit 1)
 				)
 			)
@@ -7088,7 +7248,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://www.st.com/resource/en/datasheet/stm32l152rc-a.pdf"
+		(property "Datasheet" "https://www.farnell.com/datasheets/1966352.pdf"
 			(at 93.98 73.66 0)
 			(effects
 				(font
@@ -7098,6 +7258,15 @@
 			)
 		)
 		(property "Description" "STMicroelectronics Arm Cortex-M3 MCU, 256KB flash, 32KB RAM, 32 MHz, 1.65-3.6V, 51 GPIO, LQFP64"
+			(at 93.98 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Store link" "https://hu.farnell.com/stmicroelectronics/stm32l152rct6a/mcu-32bit-cortex-m3-32mhz-lqfp/dp/2333323"
 			(at 93.98 73.66 0)
 			(effects
 				(font
@@ -7121,6 +7290,7 @@
 		)
 		(pin "61"
 			(uuid "019cb939-7fa0-4dad-838c-376d31144b3a")
+			(alternate "TIM10_CH1")
 		)
 		(pin "57"
 			(uuid "664d1dd2-a462-483f-b6fe-e9eaa87e5ebd")
@@ -7207,12 +7377,15 @@
 		)
 		(pin "21"
 			(uuid "45bf4524-88ab-43ed-aacd-ca37e1ae8bac")
+			(alternate "ADC_IN5")
 		)
 		(pin "24"
 			(uuid "b4c101fd-e7cd-4aff-b06e-37df5b54d30e")
+			(alternate "ADC_IN14")
 		)
 		(pin "26"
 			(uuid "9bf31863-01a2-46e8-9ae1-cc6391615e9d")
+			(alternate "ADC_IN8")
 		)
 		(pin "15"
 			(uuid "0d6777c7-256a-40a1-a753-29f4ba744636")
@@ -7220,9 +7393,11 @@
 		)
 		(pin "33"
 			(uuid "685c7a47-e077-4c9e-bfe7-cc504ac95b11")
+			(alternate "ADC_IN18")
 		)
 		(pin "27"
 			(uuid "7190a0e7-dc8d-42e8-9cc6-27ff8077da9c")
+			(alternate "ADC_IN9")
 		)
 		(pin "58"
 			(uuid "ea767935-f48e-45be-8819-b011174837a9")
@@ -7280,15 +7455,19 @@
 		)
 		(pin "25"
 			(uuid "0ecff011-f1ef-4771-8c3c-79b5365a8592")
+			(alternate "ADC_IN15")
 		)
 		(pin "10"
 			(uuid "0f0b1e06-ab9e-4069-97e8-9082646f1d7b")
+			(alternate "ADC_IN12")
 		)
 		(pin "11"
 			(uuid "f93f40ad-1c71-4cce-bd17-17d83182d9e1")
+			(alternate "ADC_IN13")
 		)
 		(pin "62"
 			(uuid "ed3d4d80-0c12-4729-950a-e2ab8cd20e95")
+			(alternate "TIM11_CH1")
 		)
 		(pin "31"
 			(uuid "c8bf8093-01e2-4d62-b7dc-362c0a97c203")
@@ -7304,6 +7483,7 @@
 		)
 		(pin "37"
 			(uuid "98ec863f-f3cd-45d9-95de-878e9fcce45c")
+			(alternate "TIM3_CH1")
 		)
 		(pin "29"
 			(uuid "2f56d7ac-222d-462c-adcf-a399dcc98b57")
@@ -7319,7 +7499,7 @@
 			(alternate "TIM2_CH1")
 		)
 		(instances
-			(project "Aramkortervezes_projekt"
+			(project "WindowOpener"
 				(path "/9cc66d3b-a4f0-4570-ad5d-091fde92d938"
 					(reference "U1")
 					(unit 1)
@@ -7354,7 +7534,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_2220_5750Metric_Pad1.97x5.40mm_HandSolder"
+		(property "Footprint" "Capacitor_SMD:C_1206_3216Metric_Pad1.33x1.80mm_HandSolder"
 			(at 271.4752 40.64 0)
 			(effects
 				(font
@@ -7363,7 +7543,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://hu.farnell.com/multicomp-pro/1206x106k160ct/cap-10-f-16v-10-x5r-1206/dp/2497151"
 			(at 270.51 36.83 0)
 			(effects
 				(font
@@ -7381,6 +7561,15 @@
 				(hide yes)
 			)
 		)
+		(property "Store link" "https://hu.farnell.com/multicomp-pro/1206x106k160ct/cap-10-f-16v-10-x5r-1206/dp/2497151"
+			(at 270.51 36.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "ef7ae510-9b94-4b3a-bb48-28e690f78132")
 		)
@@ -7388,7 +7577,7 @@
 			(uuid "ec45b807-338f-4dbc-8594-27ced8e50d55")
 		)
 		(instances
-			(project "Aramkortervezes_projekt"
+			(project "WindowOpener"
 				(path "/9cc66d3b-a4f0-4570-ad5d-091fde92d938"
 					(reference "C6")
 					(unit 1)
@@ -7430,7 +7619,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.yageogroup.com/component-documentation/download/specsheet/RC2010JK-07100RL"
 			(at 165.1 123.19 0)
 			(effects
 				(font
@@ -7448,6 +7637,15 @@
 				(hide yes)
 			)
 		)
+		(property "Store link" "https://hu.farnell.com/yageo/rc2010jk-07100rl/res-100r-5-0-75w-2010-thick-film/dp/3496392"
+			(at 165.1 123.19 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "7353464e-4cc4-4653-99a5-b0d077188c47")
 		)
@@ -7455,7 +7653,7 @@
 			(uuid "3a5d7f74-d9fc-4a33-a73a-27452279c58a")
 		)
 		(instances
-			(project "Aramkortervezes_projekt"
+			(project "WindowOpener"
 				(path "/9cc66d3b-a4f0-4570-ad5d-091fde92d938"
 					(reference "R3")
 					(unit 1)
@@ -7482,7 +7680,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "100nF"
+		(property "Value" "0,1uF"
 			(at 262.89 83.8199 0)
 			(effects
 				(font
@@ -7500,7 +7698,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://content.kemet.com/datasheets/KEM_C1002_X7R_SMD.pdf"
 			(at 259.08 82.55 0)
 			(effects
 				(font
@@ -7518,6 +7716,15 @@
 				(hide yes)
 			)
 		)
+		(property "Store link" "https://hu.farnell.com/kemet/c1206c104k5rac7210/cap-0-1-f-50v-10-x7r-1206/dp/2905763"
+			(at 259.08 82.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "d68d3857-6b52-4e3d-aaa7-ddac0b9a5f1f")
 		)
@@ -7525,80 +7732,9 @@
 			(uuid "bfea266b-dc9d-404b-9980-f96bb5de7889")
 		)
 		(instances
-			(project "Aramkortervezes_projekt"
+			(project "WindowOpener"
 				(path "/9cc66d3b-a4f0-4570-ad5d-091fde92d938"
 					(reference "C5")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Switch:SW_SPDT")
-		(at 48.26 38.1 180)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "5b696528-4988-4507-8d81-852b73eb2b6d")
-		(property "Reference" "SW2"
-			(at 48.26 29.21 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "SW_SPDT"
-			(at 48.26 31.75 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Package_TO_SOT_SMD:SOT-23-3"
-			(at 48.26 38.1 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 48.26 30.48 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Switch, single pole double throw"
-			(at 48.26 38.1 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "9e79782d-d8a3-4a75-9f3f-e24f2ea5739c")
-		)
-		(pin "2"
-			(uuid "7a7237ed-e627-42ca-832f-d27fece75ac8")
-		)
-		(pin "3"
-			(uuid "cf139eca-f4e2-4286-a2d1-c8ce8a135d74")
-		)
-		(instances
-			(project "Aramkortervezes_projekt"
-				(path "/9cc66d3b-a4f0-4570-ad5d-091fde92d938"
-					(reference "SW2")
 					(unit 1)
 				)
 			)
@@ -7662,7 +7798,7 @@
 			(uuid "caa7786a-596a-4209-b889-baab56d53571")
 		)
 		(instances
-			(project "Aramkortervezes_projekt"
+			(project "WindowOpener"
 				(path "/9cc66d3b-a4f0-4570-ad5d-091fde92d938"
 					(reference "#PWR04")
 					(unit 1)
@@ -7690,11 +7826,12 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 185.42 121.92 0)
+			(at 187.96 118.1099 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
 		(property "Footprint" ""
@@ -7728,76 +7865,9 @@
 			(uuid "aff8c7f1-36de-4d77-9f22-f3cdf7775351")
 		)
 		(instances
-			(project "Aramkortervezes_projekt"
+			(project "WindowOpener"
 				(path "/9cc66d3b-a4f0-4570-ad5d-091fde92d938"
 					(reference "#PWR08")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R")
-		(at 209.55 146.05 180)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "66f9a295-3d4a-48ce-8f9a-39d0b0ccc9c7")
-		(property "Reference" "R5"
-			(at 204.47 146.05 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "100R"
-			(at 207.01 146.05 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_2010_5025Metric_Pad1.40x2.65mm_HandSolder"
-			(at 211.328 146.05 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 209.55 146.05 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Resistor"
-			(at 209.55 146.05 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "442fbc46-2ae9-43e2-ba8e-91dbc0647ad9")
-		)
-		(pin "1"
-			(uuid "ee28e46d-e66c-49a7-b33a-bb87e9214d86")
-		)
-		(instances
-			(project "Aramkortervezes_projekt"
-				(path "/9cc66d3b-a4f0-4570-ad5d-091fde92d938"
-					(reference "R5")
 					(unit 1)
 				)
 			)
@@ -7861,7 +7931,7 @@
 			(uuid "b7ee25ab-1b5a-4a85-8a6c-68369d8fb580")
 		)
 		(instances
-			(project "Aramkortervezes_projekt"
+			(project "WindowOpener"
 				(path "/9cc66d3b-a4f0-4570-ad5d-091fde92d938"
 					(reference "#PWR012")
 					(unit 1)
@@ -7928,7 +7998,7 @@
 			(uuid "629b0268-b4cf-4499-a54b-0c17626967ef")
 		)
 		(instances
-			(project "Aramkortervezes_projekt"
+			(project "WindowOpener"
 				(path "/9cc66d3b-a4f0-4570-ad5d-091fde92d938"
 					(reference "#FLG03")
 					(unit 1)
@@ -7994,7 +8064,7 @@
 			(uuid "aae2b810-052f-44c1-bfb4-0a9d41a565bd")
 		)
 		(instances
-			(project "Aramkortervezes_projekt"
+			(project "WindowOpener"
 				(path "/9cc66d3b-a4f0-4570-ad5d-091fde92d938"
 					(reference "#PWR06")
 					(unit 1)
@@ -8060,7 +8130,7 @@
 			(uuid "f6023306-d3f2-4dcc-8700-bd6cfe5f47d0")
 		)
 		(instances
-			(project "Aramkortervezes_projekt"
+			(project "WindowOpener"
 				(path "/9cc66d3b-a4f0-4570-ad5d-091fde92d938"
 					(reference "#PWR02")
 					(unit 1)
@@ -8070,7 +8140,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 250.19 153.67 0)
+		(at 251.46 137.16 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -8079,7 +8149,7 @@
 		(fields_autoplaced yes)
 		(uuid "7690d015-28c4-405a-87c5-f3e002603db2")
 		(property "Reference" "#PWR020"
-			(at 250.19 160.02 0)
+			(at 251.46 143.51 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8088,7 +8158,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 250.19 158.75 0)
+			(at 251.46 142.24 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8096,7 +8166,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 250.19 153.67 0)
+			(at 251.46 137.16 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8105,7 +8175,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 250.19 153.67 0)
+			(at 251.46 137.16 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8114,7 +8184,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 250.19 153.67 0)
+			(at 251.46 137.16 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8126,7 +8196,7 @@
 			(uuid "53a2d5d1-3cef-4824-afe8-634a8323a6a1")
 		)
 		(instances
-			(project "Aramkortervezes_projekt"
+			(project "WindowOpener"
 				(path "/9cc66d3b-a4f0-4570-ad5d-091fde92d938"
 					(reference "#PWR020")
 					(unit 1)
@@ -8136,16 +8206,15 @@
 	)
 	(symbol
 		(lib_id "Connector:UEXT_Host")
-		(at 257.81 138.43 0)
+		(at 259.08 123.19 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "7cdb0d74-4f52-47d8-a1f8-40b008271303")
 		(property "Reference" "J2"
-			(at 259.9533 124.46 0)
+			(at 262.89 110.49 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8154,7 +8223,7 @@
 			)
 		)
 		(property "Value" "UEXT_Host"
-			(at 259.9533 127 0)
+			(at 262.89 113.03 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8163,7 +8232,7 @@
 			)
 		)
 		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_2x05_P2.54mm_Vertical"
-			(at 254 138.43 0)
+			(at 255.27 123.19 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8171,8 +8240,8 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://www.olimex.com/Products/Modules/UEXT/resources/UEXT_rev_B.pdf"
-			(at 254 138.43 0)
+		(property "Datasheet" "https://suddendocs.samtec.com/catalog_english/tssh.pdf"
+			(at 255.27 123.19 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8181,7 +8250,16 @@
 			)
 		)
 		(property "Description" "Universal EXTension (UEXT) is a connector layout which includes power and three serial buses: Asynchronous, I2C, and SPI"
-			(at 257.81 138.43 0)
+			(at 259.08 123.19 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Store link" "https://hu.farnell.com/samtec/tssh-105-01-s-d/pin-header-10pos-2row-2-54mm-tht/dp/3732380"
+			(at 259.08 123.19 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8220,7 +8298,7 @@
 			(uuid "03c2fef6-d17c-4f21-bc44-55102cc7d132")
 		)
 		(instances
-			(project ""
+			(project "WindowOpener"
 				(path "/9cc66d3b-a4f0-4570-ad5d-091fde92d938"
 					(reference "J2")
 					(unit 1)
@@ -8247,7 +8325,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "6pF"
+		(property "Value" "6,8pF"
 			(at 194.31 45.7199 0)
 			(effects
 				(font
@@ -8256,7 +8334,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder"
+		(property "Footprint" "Capacitor_SMD:C_1206_3216Metric_Pad1.33x1.80mm_HandSolder"
 			(at 191.4652 48.26 0)
 			(effects
 				(font
@@ -8265,7 +8343,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.hestore.hu/prod_getfile.php?id=3681"
 			(at 190.5 44.45 0)
 			(effects
 				(font
@@ -8283,6 +8361,15 @@
 				(hide yes)
 			)
 		)
+		(property "Store link" "https://www.hestore.hu/prod_10020065.html"
+			(at 190.5 44.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "3f522598-5948-414c-bd0d-40e84790543e")
 		)
@@ -8290,7 +8377,7 @@
 			(uuid "d1a321ba-7905-478e-9e15-e9e38097a6d0")
 		)
 		(instances
-			(project "Aramkortervezes_projekt"
+			(project "WindowOpener"
 				(path "/9cc66d3b-a4f0-4570-ad5d-091fde92d938"
 					(reference "C12")
 					(unit 1)
@@ -8300,7 +8387,7 @@
 	)
 	(symbol
 		(lib_id "power:VDD")
-		(at 252.73 125.73 0)
+		(at 259.08 109.22 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -8309,7 +8396,7 @@
 		(fields_autoplaced yes)
 		(uuid "8fca65fe-df25-451d-bf34-a48f880f2bb6")
 		(property "Reference" "#PWR021"
-			(at 252.73 129.54 0)
+			(at 259.08 113.03 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8318,7 +8405,7 @@
 			)
 		)
 		(property "Value" "3V3"
-			(at 252.73 120.65 0)
+			(at 259.08 104.14 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8326,7 +8413,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 252.73 125.73 0)
+			(at 259.08 109.22 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8335,7 +8422,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 252.73 125.73 0)
+			(at 259.08 109.22 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8344,7 +8431,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"VDD\""
-			(at 252.73 125.73 0)
+			(at 259.08 109.22 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8356,9 +8443,89 @@
 			(uuid "287c79d1-0485-4c35-9912-fb3959da8b5f")
 		)
 		(instances
-			(project "Aramkortervezes_projekt"
+			(project "WindowOpener"
 				(path "/9cc66d3b-a4f0-4570-ad5d-091fde92d938"
 					(reference "#PWR021")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Switch:SW_SPDT_XKB_DMx-xxxx-1")
+		(at 48.26 38.1 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "9039364f-57bd-4721-b797-26e5f53a3090")
+		(property "Reference" "SW2"
+			(at 48.26 30.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SW_SPDT_XKB"
+			(at 48.26 33.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Button_Switch_THT:SW_XKB_DM1-16UP-1"
+			(at 48.26 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.farnell.com/datasheets/3155383.pdf"
+			(at 48.26 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Position switch"
+			(at 48.26 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Store link" "https://hu.farnell.com/multicomp-pro/mp005549/microswitch-spdt-0-1a-30vdc-26gf/dp/3553961"
+			(at 48.26 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "ff19ad13-aee6-4640-9bd9-209fc165e063")
+		)
+		(pin "3"
+			(uuid "1132d698-7b0b-4b0b-9013-a2da91e95b30")
+		)
+		(pin "1"
+			(uuid "22129510-4220-4a18-b886-9cd5a914f92a")
+		)
+		(instances
+			(project "WindowOpener"
+				(path "/9cc66d3b-a4f0-4570-ad5d-091fde92d938"
+					(reference "SW2")
 					(unit 1)
 				)
 			)
@@ -8398,7 +8565,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://4donline.ihs.com/images/VipMasterIC/IC/VISH/VISH-S-A0025774705/VISH-S-A0025774688-1.pdf?hkey=6D3A4C79FDBF58556ACFDE234799DDF0"
 			(at 189.23 97.79 0)
 			(effects
 				(font
@@ -8416,6 +8583,15 @@
 				(hide yes)
 			)
 		)
+		(property "Store link" "https://hu.farnell.com/vishay/crcw20100000z0ef/res-0r-0-75w-2010-thick-film/dp/1653190"
+			(at 189.23 97.79 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "661138fa-4b3e-40d3-b92c-7bf8d7611b61")
 		)
@@ -8423,7 +8599,7 @@
 			(uuid "45948154-6be3-453b-9172-2a14d43ce2c4")
 		)
 		(instances
-			(project "Aramkortervezes_projekt"
+			(project "WindowOpener"
 				(path "/9cc66d3b-a4f0-4570-ad5d-091fde92d938"
 					(reference "R7")
 					(unit 1)
@@ -8489,9 +8665,87 @@
 			(uuid "07fd41cc-4415-4f78-9eb5-44f89b40e947")
 		)
 		(instances
-			(project "Aramkortervezes_projekt"
+			(project "WindowOpener"
 				(path "/9cc66d3b-a4f0-4570-ad5d-091fde92d938"
 					(reference "#PWR03")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Switch:SW_Push")
+		(at 207.01 91.44 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "b3f5480d-ad82-434e-98ae-398d7bd15013")
+		(property "Reference" "SW1"
+			(at 199.644 95.758 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "SW_Push"
+			(at 202.184 95.758 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Button_Switch_SMD:SW_Push_1P1T_NO_CK_KMR2"
+			(at 201.93 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://4donline.ihs.com/images/VipMasterIC/IC/CKCI/CKCI-S-A0001796527/CKCI-S-A0002249421-1.pdf?hkey=6D3A4C79FDBF58556ACFDE234799DDF0"
+			(at 201.93 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Push button switch, generic, two pins"
+			(at 207.01 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Store link" "https://hu.farnell.com/c-k-components/kmr241ngulclfs/tactile-switch-0-05a-32vdc-400gf/dp/3941601"
+			(at 207.01 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "f0fe8f18-352b-4795-bb2d-27553cabb4f5")
+		)
+		(pin "2"
+			(uuid "7217dd60-ad55-4431-8839-6613e20e2d83")
+		)
+		(instances
+			(project "WindowOpener"
+				(path "/9cc66d3b-a4f0-4570-ad5d-091fde92d938"
+					(reference "SW1")
 					(unit 1)
 				)
 			)
@@ -8516,7 +8770,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "100nF"
+		(property "Value" "0,1uF"
 			(at 222.25 38.0999 0)
 			(effects
 				(font
@@ -8534,7 +8788,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://content.kemet.com/datasheets/KEM_C1002_X7R_SMD.pdf"
 			(at 218.44 36.83 0)
 			(effects
 				(font
@@ -8552,6 +8806,15 @@
 				(hide yes)
 			)
 		)
+		(property "Store link" "https://hu.farnell.com/kemet/c1206c104k5rac7210/cap-0-1-f-50v-10-x7r-1206/dp/2905763"
+			(at 218.44 36.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "abca1a7c-697e-43a1-8121-1595144aac26")
 		)
@@ -8559,7 +8822,7 @@
 			(uuid "b8591d52-4ee7-4d49-abcf-dcd80760633d")
 		)
 		(instances
-			(project "Aramkortervezes_projekt"
+			(project "WindowOpener"
 				(path "/9cc66d3b-a4f0-4570-ad5d-091fde92d938"
 					(reference "C1")
 					(unit 1)
@@ -8586,7 +8849,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "100nF"
+		(property "Value" "0,1uF"
 			(at 260.35 38.0999 0)
 			(effects
 				(font
@@ -8604,7 +8867,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://content.kemet.com/datasheets/KEM_C1002_X7R_SMD.pdf"
 			(at 256.54 36.83 0)
 			(effects
 				(font
@@ -8622,6 +8885,15 @@
 				(hide yes)
 			)
 		)
+		(property "Store link" "https://hu.farnell.com/kemet/c1206c104k5rac7210/cap-0-1-f-50v-10-x7r-1206/dp/2905763"
+			(at 256.54 36.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "c10c9fd2-5805-47ad-a2f2-ac7c0430e8b5")
 		)
@@ -8629,7 +8901,7 @@
 			(uuid "c4387328-fe6f-444d-8eae-cc29d6321f7b")
 		)
 		(instances
-			(project "Aramkortervezes_projekt"
+			(project "WindowOpener"
 				(path "/9cc66d3b-a4f0-4570-ad5d-091fde92d938"
 					(reference "C4")
 					(unit 1)
@@ -8656,7 +8928,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "100nF"
+		(property "Value" "0,1uF"
 			(at 247.65 38.0999 0)
 			(effects
 				(font
@@ -8674,7 +8946,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://content.kemet.com/datasheets/KEM_C1002_X7R_SMD.pdf"
 			(at 243.84 36.83 0)
 			(effects
 				(font
@@ -8692,6 +8964,15 @@
 				(hide yes)
 			)
 		)
+		(property "Store link" "https://hu.farnell.com/kemet/c1206c104k5rac7210/cap-0-1-f-50v-10-x7r-1206/dp/2905763"
+			(at 243.84 36.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "a1a18a2c-fcdb-4c33-8eb1-c9f5d0ff0806")
 		)
@@ -8699,7 +8980,7 @@
 			(uuid "195263e0-2b0b-4f0c-b691-5276bb92ff00")
 		)
 		(instances
-			(project "Aramkortervezes_projekt"
+			(project "WindowOpener"
 				(path "/9cc66d3b-a4f0-4570-ad5d-091fde92d938"
 					(reference "C3")
 					(unit 1)
@@ -8726,7 +9007,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "34pF"
+		(property "Value" "33pF"
 			(at 147.32 45.7199 0)
 			(effects
 				(font
@@ -8735,7 +9016,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder"
+		(property "Footprint" "Capacitor_SMD:C_1206_3216Metric_Pad1.33x1.80mm_HandSolder"
 			(at 144.4752 48.26 0)
 			(effects
 				(font
@@ -8744,7 +9025,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.hestore.hu/prod_getfile.php?id=17344"
 			(at 143.51 44.45 0)
 			(effects
 				(font
@@ -8762,6 +9043,15 @@
 				(hide yes)
 			)
 		)
+		(property "Store link" "https://www.hestore.hu/prod_10046502.html"
+			(at 143.51 44.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "37ea5326-5f47-4e8d-85c9-93b272a77cca")
 		)
@@ -8769,7 +9059,7 @@
 			(uuid "a633c923-7a63-45f6-a087-1d8cc6acd747")
 		)
 		(instances
-			(project "Aramkortervezes_projekt"
+			(project "WindowOpener"
 				(path "/9cc66d3b-a4f0-4570-ad5d-091fde92d938"
 					(reference "C9")
 					(unit 1)
@@ -8835,7 +9125,7 @@
 			(uuid "cb78cc62-0ac3-4839-9567-0bf3c1e13c73")
 		)
 		(instances
-			(project "Aramkortervezes_projekt"
+			(project "WindowOpener"
 				(path "/9cc66d3b-a4f0-4570-ad5d-091fde92d938"
 					(reference "#PWR011")
 					(unit 1)
@@ -8901,7 +9191,7 @@
 			(uuid "469e9f6f-2b37-4b3b-9fa7-f6eb16e77390")
 		)
 		(instances
-			(project "Aramkortervezes_projekt"
+			(project "WindowOpener"
 				(path "/9cc66d3b-a4f0-4570-ad5d-091fde92d938"
 					(reference "#PWR015")
 					(unit 1)
@@ -8910,73 +9200,8 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
-		(at 196.85 158.75 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "c1d17c56-41dc-4b0f-b064-51ba3b1ea70c")
-		(property "Reference" "#PWR013"
-			(at 196.85 165.1 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 196.85 162.306 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 196.85 158.75 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 196.85 158.75 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 196.85 158.75 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "bcb0afdd-f652-4c70-8855-6f9e4ab0f5b0")
-		)
-		(instances
-			(project "Aramkortervezes_projekt"
-				(path "/9cc66d3b-a4f0-4570-ad5d-091fde92d938"
-					(reference "#PWR013")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:R")
-		(at 241.3 143.51 90)
+		(at 242.57 128.27 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -8984,7 +9209,7 @@
 		(dnp no)
 		(uuid "c56fe26b-a5b7-4817-86b9-4951d318b4a5")
 		(property "Reference" "R22"
-			(at 241.3 147.828 90)
+			(at 242.57 132.588 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8992,7 +9217,7 @@
 			)
 		)
 		(property "Value" "0R"
-			(at 241.3 146.05 90)
+			(at 242.57 130.81 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9000,7 +9225,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_2010_5025Metric_Pad1.40x2.65mm_HandSolder"
-			(at 241.3 145.288 90)
+			(at 242.57 130.048 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9008,8 +9233,8 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
-			(at 241.3 143.51 0)
+		(property "Datasheet" "https://4donline.ihs.com/images/VipMasterIC/IC/VISH/VISH-S-A0025774705/VISH-S-A0025774688-1.pdf?hkey=6D3A4C79FDBF58556ACFDE234799DDF0"
+			(at 242.57 128.27 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9018,7 +9243,16 @@
 			)
 		)
 		(property "Description" "Resistor"
-			(at 241.3 143.51 0)
+			(at 242.57 128.27 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Store link" "https://hu.farnell.com/vishay/crcw20100000z0ef/res-0r-0-75w-2010-thick-film/dp/1653190"
+			(at 242.57 128.27 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9033,7 +9267,7 @@
 			(uuid "367aaee0-d23a-4be8-91b2-9214ac593351")
 		)
 		(instances
-			(project "Aramkortervezes_projekt"
+			(project "WindowOpener"
 				(path "/9cc66d3b-a4f0-4570-ad5d-091fde92d938"
 					(reference "R22")
 					(unit 1)
@@ -9075,7 +9309,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.yageogroup.com/component-documentation/download/specsheet/RC2010JK-0710KL"
 			(at 59.69 38.1 0)
 			(effects
 				(font
@@ -9093,6 +9327,15 @@
 				(hide yes)
 			)
 		)
+		(property "Store link" "https://hu.farnell.com/yageo/rc2010jk-0710kl/res-10k-5-0-75w-2010-thick-film/dp/3496393"
+			(at 59.69 38.1 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "024089ae-3479-47bb-bf95-5824327e0a75")
 		)
@@ -9100,7 +9343,7 @@
 			(uuid "31c8022c-feab-4342-b93b-e3ab266e64c1")
 		)
 		(instances
-			(project "Aramkortervezes_projekt"
+			(project "WindowOpener"
 				(path "/9cc66d3b-a4f0-4570-ad5d-091fde92d938"
 					(reference "R6")
 					(unit 1)
@@ -9127,7 +9370,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "100nF"
+		(property "Value" "0,1uF"
 			(at 234.95 38.0999 0)
 			(effects
 				(font
@@ -9145,7 +9388,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://content.kemet.com/datasheets/KEM_C1002_X7R_SMD.pdf"
 			(at 231.14 36.83 0)
 			(effects
 				(font
@@ -9163,6 +9406,15 @@
 				(hide yes)
 			)
 		)
+		(property "Store link" "https://hu.farnell.com/kemet/c1206c104k5rac7210/cap-0-1-f-50v-10-x7r-1206/dp/2905763"
+			(at 231.14 36.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "4d02f203-2c8c-4011-a8bb-f19c0283354c")
 		)
@@ -9170,7 +9422,7 @@
 			(uuid "915c8095-6f7a-4020-8fbd-57fba4288c75")
 		)
 		(instances
-			(project "Aramkortervezes_projekt"
+			(project "WindowOpener"
 				(path "/9cc66d3b-a4f0-4570-ad5d-091fde92d938"
 					(reference "C2")
 					(unit 1)
@@ -9236,7 +9488,7 @@
 			(uuid "eb9c60d9-abb9-427f-b469-72093daf50f1")
 		)
 		(instances
-			(project "Aramkortervezes_projekt"
+			(project "WindowOpener"
 				(path "/9cc66d3b-a4f0-4570-ad5d-091fde92d938"
 					(reference "#PWR07")
 					(unit 1)
@@ -9278,7 +9530,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://4donline.ihs.com/images/VipMasterIC/IC/VISH/VISH-S-A0025774705/VISH-S-A0025774688-1.pdf?hkey=6D3A4C79FDBF58556ACFDE234799DDF0"
 			(at 194.31 85.09 0)
 			(effects
 				(font
@@ -9296,6 +9548,15 @@
 				(hide yes)
 			)
 		)
+		(property "Store link" "https://hu.farnell.com/vishay/crcw20100000z0ef/res-0r-0-75w-2010-thick-film/dp/1653190"
+			(at 194.31 85.09 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "acd894e0-7539-47e3-91f0-804580a3d00c")
 		)
@@ -9303,7 +9564,7 @@
 			(uuid "4bf61249-1847-4e06-bf1a-675d580ad0a0")
 		)
 		(instances
-			(project "Aramkortervezes_projekt"
+			(project "WindowOpener"
 				(path "/9cc66d3b-a4f0-4570-ad5d-091fde92d938"
 					(reference "R4")
 					(unit 1)
@@ -9348,7 +9609,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.yageogroup.com/content/datasheet/asset/file/UPY-GPHC_X7R_6_3V-TO-250V"
 			(at 274.32 82.55 0)
 			(effects
 				(font
@@ -9366,6 +9627,15 @@
 				(hide yes)
 			)
 		)
+		(property "Store link" "https://hu.farnell.com/yageo/cc2220kkx7r9bb105/cap-1uf-50v-mlcc-2220/dp/3764755"
+			(at 274.32 82.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "87959945-ba47-40d4-811d-30f89f5c53cc")
 		)
@@ -9373,7 +9643,7 @@
 			(uuid "833834b3-296e-4567-9dc7-5315675f32b8")
 		)
 		(instances
-			(project "Aramkortervezes_projekt"
+			(project "WindowOpener"
 				(path "/9cc66d3b-a4f0-4570-ad5d-091fde92d938"
 					(reference "C7")
 					(unit 1)
@@ -9438,7 +9708,7 @@
 			(uuid "47c36bab-7f4f-404d-8271-6516da4464d4")
 		)
 		(instances
-			(project "Aramkortervezes_projekt"
+			(project "WindowOpener"
 				(path "/9cc66d3b-a4f0-4570-ad5d-091fde92d938"
 					(reference "#PWR010")
 					(unit 1)
@@ -9505,7 +9775,7 @@
 			(uuid "e49f8348-8356-436a-a613-62cac9bac4b1")
 		)
 		(instances
-			(project "Aramkortervezes_projekt"
+			(project "WindowOpener"
 				(path "/9cc66d3b-a4f0-4570-ad5d-091fde92d938"
 					(reference "#PWR05")
 					(unit 1)
@@ -9550,7 +9820,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://www.st.com/content/ccc/resource/technical/document/user_manual/group1/99/49/91/b6/b2/3a/46/e5/DM00526767/files/DM00526767.pdf/jcr:content/translations/en.DM00526767.pdf"
+		(property "Datasheet" "https://www.farnell.com/datasheets/2045594.pdf"
 			(at 161.29 129.54 90)
 			(effects
 				(font
@@ -9560,6 +9830,15 @@
 			)
 		)
 		(property "Description" "ST Debug Connector, standard ARM Cortex-M SWD and JTAG interface plus UART"
+			(at 170.18 97.79 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Store link" "https://hu.farnell.com/samtec/fts-107-01-l-d/connector-14pos-header-1-27mm/dp/2984582"
 			(at 170.18 97.79 0)
 			(effects
 				(font
@@ -9611,7 +9890,7 @@
 			(uuid "70334f30-a740-4b47-95f1-ce76db55e082")
 		)
 		(instances
-			(project "Aramkortervezes_projekt"
+			(project "WindowOpener"
 				(path "/9cc66d3b-a4f0-4570-ad5d-091fde92d938"
 					(reference "J1")
 					(unit 1)
@@ -9654,7 +9933,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://content.kemet.com/datasheets/KEM_C1002_X7R_SMD.pdf"
 			(at 218.44 91.44 0)
 			(effects
 				(font
@@ -9672,6 +9951,15 @@
 				(hide yes)
 			)
 		)
+		(property "Store link" "https://hu.farnell.com/kemet/c1206c104k5rac7210/cap-0-1-f-50v-10-x7r-1206/dp/2905763"
+			(at 218.44 91.44 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "483178ae-ceb1-4dd3-826d-8db03c170459")
 		)
@@ -9679,7 +9967,7 @@
 			(uuid "50b3f4c7-833f-4489-a768-1533208d9416")
 		)
 		(instances
-			(project "Aramkortervezes_projekt"
+			(project "WindowOpener"
 				(path "/9cc66d3b-a4f0-4570-ad5d-091fde92d938"
 					(reference "C8")
 					(unit 1)
@@ -9689,7 +9977,7 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 241.3 133.35 90)
+		(at 242.57 118.11 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -9697,7 +9985,7 @@
 		(dnp no)
 		(uuid "e7710526-915e-4c7f-bdf8-1ce23e9c5744")
 		(property "Reference" "R9"
-			(at 241.3 128.27 90)
+			(at 242.57 113.03 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9705,7 +9993,7 @@
 			)
 		)
 		(property "Value" "0R"
-			(at 241.3 130.81 90)
+			(at 242.57 115.57 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9713,7 +10001,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_2010_5025Metric_Pad1.40x2.65mm_HandSolder"
-			(at 241.3 135.128 90)
+			(at 242.57 119.888 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9721,8 +10009,8 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
-			(at 241.3 133.35 0)
+		(property "Datasheet" "https://4donline.ihs.com/images/VipMasterIC/IC/VISH/VISH-S-A0025774705/VISH-S-A0025774688-1.pdf?hkey=6D3A4C79FDBF58556ACFDE234799DDF0"
+			(at 242.57 118.11 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9731,7 +10019,16 @@
 			)
 		)
 		(property "Description" "Resistor"
-			(at 241.3 133.35 0)
+			(at 242.57 118.11 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Store link" "https://hu.farnell.com/vishay/crcw20100000z0ef/res-0r-0-75w-2010-thick-film/dp/1653190"
+			(at 242.57 118.11 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9746,7 +10043,7 @@
 			(uuid "f2cc0d97-9827-427c-9136-e7b52705bb87")
 		)
 		(instances
-			(project "Aramkortervezes_projekt"
+			(project "WindowOpener"
 				(path "/9cc66d3b-a4f0-4570-ad5d-091fde92d938"
 					(reference "R9")
 					(unit 1)
@@ -9812,7 +10109,7 @@
 			(uuid "7d81a3ca-9e7a-45ee-bea4-10ecb8d0f51f")
 		)
 		(instances
-			(project "Aramkortervezes_projekt"
+			(project "WindowOpener"
 				(path "/9cc66d3b-a4f0-4570-ad5d-091fde92d938"
 					(reference "#PWR09")
 					(unit 1)
@@ -9879,7 +10176,7 @@
 			(uuid "ee4eb053-3c8a-415f-b6a3-da4306addcf4")
 		)
 		(instances
-			(project "Aramkortervezes_projekt"
+			(project "WindowOpener"
 				(path "/9cc66d3b-a4f0-4570-ad5d-091fde92d938"
 					(reference "#FLG02")
 					(unit 1)
@@ -9922,7 +10219,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.farnell.com/datasheets/4087567.pdf"
 			(at 182.88 35.56 0)
 			(effects
 				(font
@@ -9940,6 +10237,15 @@
 				(hide yes)
 			)
 		)
+		(property "Store link" "https://hu.farnell.com/txc/qt26-32-768kdzb-b/xtal-32-768khz-6pf-6mm-x-2mm-dia/dp/4326431RL"
+			(at 182.88 35.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "3f8338a7-cb8e-475f-8443-f643fa6778af")
 		)
@@ -9947,7 +10253,7 @@
 			(uuid "cfebcc22-d1e9-4064-a51e-364b7062403e")
 		)
 		(instances
-			(project "Aramkortervezes_projekt"
+			(project "WindowOpener"
 				(path "/9cc66d3b-a4f0-4570-ad5d-091fde92d938"
 					(reference "Y2")
 					(unit 1)
@@ -9973,7 +10279,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "6pF"
+		(property "Value" "6,8pF"
 			(at 179.07 45.7199 0)
 			(effects
 				(font
@@ -9982,7 +10288,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder"
+		(property "Footprint" "Capacitor_SMD:C_1206_3216Metric_Pad1.33x1.80mm_HandSolder"
 			(at 176.2252 48.26 0)
 			(effects
 				(font
@@ -9991,7 +10297,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.hestore.hu/prod_getfile.php?id=3681"
 			(at 175.26 44.45 0)
 			(effects
 				(font
@@ -10009,6 +10315,15 @@
 				(hide yes)
 			)
 		)
+		(property "Store link" "https://www.hestore.hu/prod_10020065.html"
+			(at 175.26 44.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "0f207fa6-047f-4c14-be29-c846f0193b9e")
 		)
@@ -10016,7 +10331,7 @@
 			(uuid "89afb698-6b04-4d7d-836f-b68baeea1c6b")
 		)
 		(instances
-			(project "Aramkortervezes_projekt"
+			(project "WindowOpener"
 				(path "/9cc66d3b-a4f0-4570-ad5d-091fde92d938"
 					(reference "C11")
 					(unit 1)
@@ -10025,8 +10340,51 @@
 		)
 	)
 	(sheet
-		(at 148.59 138.43)
-		(size 19.05 12.7)
+		(at 205.74 137.16)
+		(size 16.51 11.43)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "941e0566-51db-4c6f-ab19-e6a8bc9abf80")
+		(property "Sheetname" "LEDs"
+			(at 205.74 136.4484 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(property "Sheetfile" "leds.kicad_sch"
+			(at 205.74 149.1746 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "WindowOpener"
+				(path "/9cc66d3b-a4f0-4570-ad5d-091fde92d938"
+					(page "4")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 260.35 148.59)
+		(size 20.32 12.7)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
@@ -10040,17 +10398,18 @@
 			(color 0 0 0 0.0000)
 		)
 		(uuid "9855627f-fa2d-4bc2-9342-1b3aeb423b2c")
-		(property "Sheetname" "Power+USB"
-			(at 148.59 137.7184 0)
+		(property "Sheetname" "MCU+Motors power"
+			(at 260.35 147.8784 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left bottom)
+				(hide yes)
 			)
 		)
 		(property "Sheetfile" "power.kicad_sch"
-			(at 148.59 151.7146 0)
+			(at 260.35 161.8746 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10059,9 +10418,52 @@
 			)
 		)
 		(instances
-			(project "Aramkortervezes_projekt"
+			(project "WindowOpener"
 				(path "/9cc66d3b-a4f0-4570-ad5d-091fde92d938"
 					(page "2")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 229.87 147.32)
+		(size 21.59 12.7)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "be610696-c881-47e9-9995-7dcc8a9a0126")
+		(property "Sheetname" "Sensors"
+			(at 229.87 146.6084 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(property "Sheetfile" "sensors.kicad_sch"
+			(at 229.87 160.6046 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "WindowOpener"
+				(path "/9cc66d3b-a4f0-4570-ad5d-091fde92d938"
+					(page "3")
 				)
 			)
 		)
