@@ -3779,12 +3779,6 @@
 		(uuid "56a1cb8c-bf32-4cd8-976d-f7bebe5dbced")
 	)
 	(junction
-		(at 118.11 21.59)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "62810ba7-46e9-43da-932c-0cabb4e0ea29")
-	)
-	(junction
 		(at 250.19 44.45)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -4246,16 +4240,6 @@
 		)
 		(uuid "274cf250-1c7b-4765-b0e2-b085078a420f")
 	)
-	(wire
-		(pts
-			(xy 114.3 21.59) (xy 118.11 21.59)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "2c40454a-67e3-41a0-b3d8-1ba51d21b8a4")
-	)
 	(polyline
 		(pts
 			(xy 200.66 152.4) (xy 200.66 133.35)
@@ -4275,16 +4259,6 @@
 			(type default)
 		)
 		(uuid "2d6031e1-08d7-4f13-a9bb-fc1e1898ad98")
-	)
-	(wire
-		(pts
-			(xy 114.3 35.56) (xy 114.3 21.59)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "2f0a6f80-c93f-4521-915a-d7477fe271b1")
 	)
 	(wire
 		(pts
@@ -4435,16 +4409,6 @@
 			(type default)
 		)
 		(uuid "3fdea540-b07b-4992-ad89-409d7674f972")
-	)
-	(wire
-		(pts
-			(xy 114.3 13.97) (xy 118.11 13.97)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "410aa15f-aa1e-454a-89e5-3296e2595a58")
 	)
 	(wire
 		(pts
@@ -6040,22 +6004,22 @@
 	)
 	(global_label "ADC1"
 		(shape output)
-		(at 114.3 13.97 180)
+		(at 114.3 35.56 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify right)
+			(justify left)
 		)
 		(uuid "2ea040fe-1592-4cb0-9c1f-c2a4faa41296")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 106.4767 13.97 0)
+			(at 122.1233 35.56 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify right)
+				(justify left)
 				(hide yes)
 			)
 		)
@@ -6545,72 +6509,6 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
-		(at 118.11 29.21 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "1077d01e-c15a-4170-a990-0153d752c322")
-		(property "Reference" "#PWR041"
-			(at 118.11 35.56 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 118.11 34.29 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 118.11 29.21 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 118.11 29.21 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 118.11 29.21 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "e4e8af90-6c4f-4f6c-b4d0-a47e66e2f6c7")
-		)
-		(instances
-			(project "WindowOpener"
-				(path "/9cc66d3b-a4f0-4570-ad5d-091fde92d938"
-					(reference "#PWR041")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:R")
 		(at 189.23 107.95 270)
 		(unit 1)
@@ -7054,158 +6952,6 @@
 			(project "WindowOpener"
 				(path "/9cc66d3b-a4f0-4570-ad5d-091fde92d938"
 					(reference "R1")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R")
-		(at 118.11 17.78 180)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "282073d1-e007-42dc-a3fc-f5bf095c7f65")
-		(property "Reference" "R41"
-			(at 113.03 17.78 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "1k"
-			(at 115.57 17.78 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_2010_5025Metric_Pad1.40x2.65mm_HandSolder"
-			(at 119.888 17.78 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.yageogroup.com/component-documentation/download/specsheet/RC2010JK-07100RL"
-			(at 118.11 17.78 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Resistor"
-			(at 118.11 17.78 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Store link" "https://hu.farnell.com/yageo/rc2010jk-07100rl/res-100r-5-0-75w-2010-thick-film/dp/3496392"
-			(at 118.11 17.78 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "b3b7be8d-7909-4f9f-bc4b-fa31b2eb2f3e")
-		)
-		(pin "1"
-			(uuid "cdd3b563-129f-4f52-b8d1-9eb53b435f2a")
-		)
-		(instances
-			(project "WindowOpener"
-				(path "/9cc66d3b-a4f0-4570-ad5d-091fde92d938"
-					(reference "R41")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R")
-		(at 118.11 25.4 180)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "34ddca9d-259d-42ca-9af2-39b3fed83e1c")
-		(property "Reference" "R42"
-			(at 113.03 25.4 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "1k"
-			(at 115.57 25.4 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_2010_5025Metric_Pad1.40x2.65mm_HandSolder"
-			(at 119.888 25.4 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.yageogroup.com/component-documentation/download/specsheet/RC2010JK-07100RL"
-			(at 118.11 25.4 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Resistor"
-			(at 118.11 25.4 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Store link" "https://hu.farnell.com/yageo/rc2010jk-07100rl/res-100r-5-0-75w-2010-thick-film/dp/3496392"
-			(at 118.11 25.4 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "934d0a17-9132-43b0-8e12-fef8017eef83")
-		)
-		(pin "1"
-			(uuid "52f28a5d-bb0d-4708-a154-5e4c62277037")
-		)
-		(instances
-			(project "WindowOpener"
-				(path "/9cc66d3b-a4f0-4570-ad5d-091fde92d938"
-					(reference "R42")
 					(unit 1)
 				)
 			)
