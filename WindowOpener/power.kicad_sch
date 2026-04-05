@@ -6187,7 +6187,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://4donline.ihs.com/images/VipMasterIC/IC/PANA/PANA-S-A0017042869/PANA-S-A0017226461-1.pdf?hkey=6D3A4C79FDBF58556ACFDE234799DDF0"
+		(property "Datasheet" "https://www.farnell.com/datasheets/3680671.pdf"
 			(at 120.65 35.56 0)
 			(effects
 				(font
@@ -6205,7 +6205,7 @@
 				(hide yes)
 			)
 		)
-		(property "Store link" "https://hu.farnell.com/panasonic/erj8geyj100v/res-10r-5-0-25w-1206-thick-film/dp/4147891"
+		(property "Store link" "https://hu.farnell.com/multicomp-pro/mcwr12x10r0ftl/res-10r-1-0-25w-1206-thick-film/dp/2447457"
 			(at 120.65 35.56 90)
 			(effects
 				(font
